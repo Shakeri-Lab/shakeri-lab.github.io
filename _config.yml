@@ -152,6 +152,7 @@ footer:
       # url:
 
 include: ["_posts"]
+include: ["_portfolio"]
 include: ["_pages"]
 # Reading Files
 include:

@@ -25,7 +25,7 @@ url                      : "https://shakeri-lab.github.io"
 baseurl                  : ""
 repository               : "Shakeri-Lab/shakeri-lab.github.io"
 teaser                   : #"/assets/images/midjourney.png"
-logo                     : "/assets/images/site-logo.png"
+logo                     : #"/assets/images/site-logo.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs            : false # true, false (default)
 words_per_minute         : 200

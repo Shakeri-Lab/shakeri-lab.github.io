@@ -18,17 +18,21 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt
 locale                   : "en-US"
 title                    : "Shakeri Research Group"
 title_separator          : "-"
-subtitle                 : "ML for Dynamical Systems and Control"
-name                     : "Heman Shakeri"
-description              : "Assistant Professor of Data Science and Biomedical Engineering"
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : #"/homepage"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "/assets/images/midjourney.png"
+# subtitle                 : &description "ML for Dynamical Systems and Control"
+name                     : &name "Shakeri Research Group"
+description              : &description "ML for Dynamical Systems and Control"
+url                      : "https://shakeri-lab.github.io"
+baseurl                  : ""
+repository               : "Shakeri-Lab/shakeri-lab.github.io"
+teaser                   : #"/assets/images/midjourney.png"
 logo                     : "/assets/images/site-logo.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
+breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
+future                   : true
+read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
+talkmap_link             : false #change to true to add link to talkmap on talks page
+
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
@@ -51,8 +55,22 @@ comments:
     reactions_enabled    : # '1' for enabled (default), '0' for disabled
     theme                : # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
   staticman:
-    branch               : # "master"
-    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
+    allowedFields          : ['name', 'email', 'url', 'message']
+    branch                 : "gh-pages" # "master", "gh-pages"
+    commitMessage          : "New comment."
+    filename               : comment-{@timestamp}
+    format                 : "yml"
+    moderation             : true
+    path                   : "_data/comments/{options.slug}"
+    requiredFields         : ['name', 'email', 'message']
+    transforms:
+      email                : "md5"
+    generatedFields:
+      date:
+        type               : "date"
+        options:
+          format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+
 reCaptcha:
   siteKey                :
   secret                 :
@@ -96,7 +114,7 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : "google-universal" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
     tracking_id          :
     anonymize_ip         : # true, false (default)
@@ -104,11 +122,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  name             : "Shakeri Research Group"
+  avatar           : "/assets/images/logo-site.png"
+  bio              : "ML for Dynamical Systems and Control"
+  location         : "Charlottesville, VA"
   email            :
+  googlescholar    : "https://scholar.google.com/citations?hl=en&user=zFIIhGMAAAAJ&view_op=list_works&sortby=pubdate"
+  email            :
+  youtube          : 
+  github           : "Shakeir-Lab"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -140,7 +162,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/Shakeri-Lab"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -151,13 +173,14 @@ footer:
       icon: "fab fa-fw fa-instagram"
       # url:
 
-include: ["_posts"]
-include: ["_portfolio"]
-include: ["_pages"]
+# include: ["_posts"]
+# include: ["_portfolio"]
+# include: ["_pages"]
 # Reading Files
 include:
   - .htaccess
   - _pages
+  - files
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -183,8 +206,6 @@ exclude:
   - Rakefile
   - README
   - tmp
-  - /docs # ignore Minimal Mistakes /docs
-  - /test # ignore Minimal Mistakes /test
 keep_files:
   - .git
   - .svn
@@ -211,6 +232,20 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
+# Collections
+collections:
+  teaching:
+    output: true
+    permalink: /:collection/:path/
+  publications:
+    output: true
+    permalink: /:collection/:path/
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+  talks:
+    output: true
+    permalink: /:collection/:path/
 
 # Sass/SCSS
 sass:
@@ -218,6 +253,65 @@ sass:
   style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
 
+
+
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _teaching
+  - scope:
+      path: ""
+      type: teaching
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # _publications
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
+  # _talks
+  - scope:
+      path: ""
+      type: talks
+    values:
+      layout: talk
+      author_profile: true
+      share: true
+      
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
@@ -277,27 +371,3 @@ compress_html:
   clippings: all
   ignore:
     envs: development
-
-
-# Defaults
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: # true
-      share: true
-      related: true
-defaults:
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: false
-      share: true

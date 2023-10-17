@@ -1,9 +1,10 @@
 - section: "Current Lab Members"
   members:
     - name: Heman Shakeri
+      title: Principal Investigator
       site: https://finale.seas.harvard.edu/
       image: /images/people/Heman_002_crop.jpg
-      hover: /images/PI.png      title: Principal Investigator
+      hover: /images/PI.png      
       blurb: |- 
         Heman is a cool guy!
     - name: Ali Tavasoli

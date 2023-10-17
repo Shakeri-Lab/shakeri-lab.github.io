@@ -6,7 +6,7 @@ main:
     url: /people/
   - title: "Blog"
     url: /blog/
-   - title: "Joining"
+  - title: "Joining"
     url: /joining/ 
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/

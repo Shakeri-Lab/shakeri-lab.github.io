@@ -1,0 +1,31 @@
+---
+layout: archive
+title: "People"
+permalink: /people/
+---
+
+{% for s in site.data.people %}
+  <h2>{{ s.section }}</h2>
+
+  <div class='people'>
+    {% for p in s.members %}
+      <div class='person' tabindex='0' {% if p.blurb %} data-tippy-content='{{ p.blurb }}' {% endif %}>
+        <div class='person__image'>
+          {% if p.hover %}
+            <img class='person__image__hover' src='{{ p.hover }}'>
+          {% endif %}
+          <img class='person__image__headshot' src='{{ p.image }}'>
+        </div>
+
+        <div class='person__name'>
+          {% if p.site %}
+            <a href='{{ p.site }}' target='_blank'>{{ p.name }}</a>
+          {% else %}
+            {{ p.name }}
+          {% endif %}
+        </div>
+        <div class='person__title'>{{ p.title }}</div>
+      </div>
+    {% endfor %}
+  </div>
+{% endfor %}

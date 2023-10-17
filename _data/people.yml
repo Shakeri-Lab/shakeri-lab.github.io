@@ -1,0 +1,42 @@
+- section: "Current Lab Members"
+  members:
+    - name: Heman Shakeri
+      site: https://finale.seas.harvard.edu/
+      image: /images/people/Heman_002_crop.jpg
+      hover: /images/PI.png      title: Principal Investigator
+      blurb: |- 
+        Heman is a cool guy!
+    - name: Ali Tavasoli
+      title: PostDoc Research Scientist
+      site: #https://onefishy.github.io
+      hover: /images/PD.png
+      image: /images/people/Tavasoli-Ali.jpg
+      blurb: |-
+        I am interested in Dynamical systems, operator-theoretic methods. I like to spend my spare time reading novels.
+
+    - name: Justin Lee
+      title: PhD Student
+      site: #https://onefishy.github.io
+      hover: /images/PhD.png
+      image: /images/PhD.png
+      blurb: |-
+        I am interested in Dynamical systems, operator-theoretic methods. I like to spend my spare time reading novels.
+
+
+
+    - section: "Former Members"
+  members:
+    - name: Shahab Azarfar
+      title: PostDoc Fellow
+      site: #https://yanivyacoby.github.io/
+      hover: /images/PD.png
+      image: /images/people/shahab.jpeg
+      blurb: |-
+        I work on ..
+    - name: Mehrdad Fazli
+      title: PhD student
+      site: https://scholar.google.com/citations?user=e7AeExMAAAAJ&hl=en
+      image: /images/people/mehrdad.jpeg
+      hover: /images/PhD.png 
+      blurb: |-
+        I am interested in Dynamical systems, operator-theoretic methods. I like to spend my spare time reading novels.

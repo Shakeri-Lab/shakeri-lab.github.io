@@ -7,3 +7,101 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+@import "vendor/breakpoint/breakpoint"; // media query mixins
+@import "variables";
+@import "mixins";
+@import "vendor/susy/susy";
+
+@import "reset";
+@import "base";
+
+@import "utilities";
+@import "animations";
+@import "tables";
+@import "buttons";
+@import "notices";
+@import "masthead";
+@import "navigation";
+@import "footer";
+@import "syntax";
+
+@import "forms";
+
+@import "page";
+@import "archive";
+@import "sidebar";
+
+@import "vendor/font-awesome/fontawesome";
+@import "vendor/font-awesome/solid";
+@import "vendor/font-awesome/brands";
+@import "vendor/magnific-popup/magnific-popup";
+@import "print";
+
+.publication + .publication {
+  margin-top: 1rem;
+}
+
+.people {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -1rem;
+}
+
+.person {
+  padding: 1rem;
+  margin-right: 1rem;
+  display: block;
+  width: calc(25% - 1rem);
+
+  .person__image {
+    position: relative;
+
+    img {
+      width: 100%;
+      border-radius: 10000px;
+      margin-bottom: 5px;
+    }
+
+    .person__image__hover {
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .person__name,
+  .person__title {
+    text-align: center;
+  }
+
+  .person__title {
+    font-size: .75em;
+  }
+
+  &:hover, &:focus {
+    .person__image__hover {
+      opacity: 0.867;
+    }
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .person {
+    width: calc(33.33% - 1rem);
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .person {
+    width: calc(50% - 1rem);
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .person {
+    width: 100%;
+  }
+}
+

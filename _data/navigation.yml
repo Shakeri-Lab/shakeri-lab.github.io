@@ -1,9 +1,13 @@
-c# main links
+# main links
 main:
   - title: "Research"
-    url: "/research/"
+    url: /research/
+  - title: "People"
+    url: /people/
   - title: "Blog"
-    url: "/blog/"
+    url: /blog/
+   - title: "Joining"
+    url: /joining/ 
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"

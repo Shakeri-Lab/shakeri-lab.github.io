@@ -1,7 +1,7 @@
-# main links
+c# main links
 main:
-  - title: "Portfolio"
-    url: "/portfolio/"
+  - title: "Research"
+    url: "/research/"
   - title: "Blog"
     url: "/blog/"
   # - title: "About"

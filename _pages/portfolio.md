@@ -1,7 +1,7 @@
 ---
 title: Portfolio
 layout: collection
-permalink: /projetcs/
+permalink: /research/
 collection: portfolio
 entries_layout: grid
 classes: wide

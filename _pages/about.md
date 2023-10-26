@@ -16,7 +16,7 @@ We will make use of network analysis, learning algorithms, and data-driven model
 Our work falls into three major areas:
 
 1. **Learning-based Control**: <br>
-  *We focus especially on .. *
+  *We focus especially on ..*
     - item 1
     - item 2
 2. **Decision-making under uncertainty**: <br>

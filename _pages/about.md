@@ -9,7 +9,7 @@ redirect_from:
   - /about.html
 ---
 
-We are part of the [School of Data Science at the University of Virginia](https://datascience.virginia.edu/), led by [Heman Shakeri](https://datascience.virginia.edu/people/heman-shakeri)). Our multidisciplinary group develops algorithms to analyze data from dynamic interconnected systems. The applications of our research range from subcellular processes to human interactions.
+We are part of the [School of Data Science at the University of Virginia](https://datascience.virginia.edu/), led by [Heman Shakeri](https://datascience.virginia.edu/people/heman-shakeri). Our multidisciplinary group develops algorithms to analyze data from dynamic interconnected systems. The applications of our research range from subcellular processes to human interactions.
 
 We will make use of network analysis, learning algorithms, and data-driven model reduction to advance our understanding of these systems. If interested in joining our research please contact hs9hd at Virginia dot edu.
 

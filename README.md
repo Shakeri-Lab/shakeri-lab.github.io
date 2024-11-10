@@ -1,40 +1,99 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# DYNAMO Lab Website
 
-## Getting Started
+This repository contains the source code for the DYNAMO Lab website at the School of Data Science, University of Virginia.
 
-First, run the development server:
+## How to Update Content
 
-```bash
+### Team Members
+To update team members, edit `src/data/team.ts`:
+
+```typescript
+export const team = {
+  pi: {
+    name: "Name",
+    title: "Title",
+    link: "URL to profile"
+  },
+  currentMembers: [
+    {
+      name: "Name",
+      title: "Position",
+      link: "URL to profile"
+    },
+    // Add more members here
+  ],
+  alumni: [
+    {
+      name: "Name",
+      title: "Current Position",
+      link: "URL to profile"
+    },
+    // Add more alumni here
+  ]
+};
+News Items
+To add news items, edit src/data/news.ts. News items are automatically sorted by date:
+typescriptCopyexport const news = [
+  {
+    date: "Month YYYY",
+    title: "News Title",
+    content: "News content",
+    links: [{
+      text: "Link Text",
+      url: "URL"
+    }]
+  },
+  // Add more news items here
+];
+Projects
+To add or update projects, edit the Projects section in src/pages/index.tsx. Find the "Current Projects" section and add your project:
+tsxCopy<div>
+  <h3 className="font-semibold mb-2 text-zinc-700">Project Title</h3>
+  <p className="text-sm">
+    Project description with <strong>highlighted terms</strong>.
+  </p>
+  {/* Add links if needed */}
+  <Link 
+    href="external-url"
+    className="text-sm text-primary hover:underline"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Link Text →
+  </Link>
+</div>
+External Links
+Add external links to projects or content using Next.js Link component:
+tsxCopy<Link 
+  href="https://external-url.com"
+  className="text-sm text-primary hover:underline"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Link Text →
+</Link>
+Development
+
+Run the development server:
+
+bashCopynpm run dev
+
+Open http://localhost:3000 to see your changes
+Build for production:
+
+bashCopynpm run build
+Deployment
+The website is automatically deployed to GitHub Pages when changes are pushed to the main branch.
+Local Setup
+bashCopy# Clone the repository
+git clone git@github.com:Shakeri-Lab/shakeri-lab.github.io.git
+
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Contact
+For website maintenance questions, contact:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+Heman Shakeri

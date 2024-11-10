@@ -2,14 +2,11 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  output: 'export',
   images: {
     unoptimized: true,
-  },
-  // Only add basePath and output when building for production
-  ...(process.env.NODE_ENV === 'production' ? {
-    output: 'export',
-    basePath: '/lab-website',
-  } : {}),
+  }
+  // basePath removed since we're using shakeri-lab.github.io
 };
 
 export default nextConfig;

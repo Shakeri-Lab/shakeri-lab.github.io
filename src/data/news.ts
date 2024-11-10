@@ -65,13 +65,21 @@ export const news: NewsItem[] = [
   },
   {
     date: "September 2024",
-    title: "Paper Published in Network Science",
-    content: "Our paper 'The art of interconnections: Achieving maximum algebraic connectivity in multilayer networks' was published."
+    title: "Paper Published in Journal of Network Science",
+    content: "Our paper 'The art of interconnections: Achieving maximum algebraic connectivity in multilayer networks' was published.",
+    links: [{
+      text: "View Publication",
+      url: "https://www.cambridge.org/core/journals/network-science/article/art-of-interconnections-achieving-maximum-algebraic-connectivity-in-multilayer-networks/67B428A634B2BF0741AFD0B350F8AB4E"
+    }]
   },
   {
     date: "March 2024",
     title: "Paper Published in Frontiers",
-    content: "Our paper 'Biophysical modulation and robustness of itinerant complexity in neuronal networks' was published in Frontiers in Network Physiology."
+    content: "Our paper 'Biophysical modulation and robustness of itinerant complexity in neuronal networks' was published in Frontiers in Network Physiology.",
+    links: [{
+      text: "View Publication",
+      url: "https://www.frontiersin.org/journals/network-physiology/articles/10.3389/fnetp.2024.1302499/full"
+    }]
   },
   {
     date: "March 2023",
@@ -83,13 +91,31 @@ export const news: NewsItem[] = [
     }]
   },
   {
-    date: "2023",
+    date: "July 2023",
     title: "Paper Published in ISA Transactions",
     content: "Our paper 'A purely data-driven framework for prediction, optimization, and control of networked processes' has been published.",
     links: [{
       text: "View Publication",
       url: "https://www.sciencedirect.com/science/article/abs/pii/S0019057823"
     }]
+  },
+  {
+    date: "July 2023",
+    title: "NIH NCBI R01 Grant Award",
+    content: "Our team received an NIH R01 grant for 'Optimizing Treatment Decision Making for Patients with Localized Renal Masses'. This $1,637,195 grant runs through June 2027. Dr. Shakeri serves as Co-Investigator on this project.",
+  },
+
+  // ... other 2023-2022 news items ...
+
+  {
+    date: "May 2021",
+    title: "3 CAVALIERS RAPID SEED GRANT Awarded",
+    content: "Received $60,000 for our project 'Dissecting the origins of heterogeneous cancer cellular interactions and responses to therapeutic perturbation'. Dr. Shakeri is the Principal Investigator on this grant.",
+  },
+  {
+    date: "July 2020",
+    title: "Ivy Foundation Grant Awarded",
+    content: "Received $100,000 from Ivy Foundation for 'Epidemiologic Modeling, Public Health Surveillance and Sewershed Monitoring to Predict Surges in the COVID-19 Pandemic'. Dr. Shakeri serves as Principal Investigator.",
   },
   {
     date: "2023",

@@ -1,99 +1,95 @@
-# DYNAMO Lab Website
+# Lab Website
 
-This repository contains the source code for the DYNAMO Lab website at the School of Data Science, University of Virginia.
+This is the official website for our lab, built with Next.js and deployed on GitHub Pages.
 
-## How to Update Content
+## Development Setup
 
-### Team Members
-To update team members, edit `src/data/team.ts`:
+### Prerequisites
+- Node.js (v18 or higher)
+- npm (comes with Node.js)
+- Git
 
-```typescript
-export const team = {
-  pi: {
-    name: "Name",
-    title: "Title",
-    link: "URL to profile"
-  },
-  currentMembers: [
-    {
-      name: "Name",
-      title: "Position",
-      link: "URL to profile"
-    },
-    // Add more members here
-  ],
-  alumni: [
-    {
-      name: "Name",
-      title: "Current Position",
-      link: "URL to profile"
-    },
-    // Add more alumni here
-  ]
-};
-News Items
-To add news items, edit src/data/news.ts. News items are automatically sorted by date:
-typescriptCopyexport const news = [
-  {
-    date: "Month YYYY",
-    title: "News Title",
-    content: "News content",
-    links: [{
-      text: "Link Text",
-      url: "URL"
-    }]
-  },
-  // Add more news items here
-];
-Projects
-To add or update projects, edit the Projects section in src/pages/index.tsx. Find the "Current Projects" section and add your project:
-tsxCopy<div>
-  <h3 className="font-semibold mb-2 text-zinc-700">Project Title</h3>
-  <p className="text-sm">
-    Project description with <strong>highlighted terms</strong>.
-  </p>
-  {/* Add links if needed */}
-  <Link 
-    href="external-url"
-    className="text-sm text-primary hover:underline"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Link Text →
-  </Link>
-</div>
-External Links
-Add external links to projects or content using Next.js Link component:
-tsxCopy<Link 
-  href="https://external-url.com"
-  className="text-sm text-primary hover:underline"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  Link Text →
-</Link>
-Development
+### Initial Setup
+1. Clone the repository:
+```bash
+git clone [repository-url]
+cd lab-website
+```
 
-Run the development server:
+2. Install dependencies:
+```bash
+# Remove existing dependencies (if any)
+rm -rf node_modules
+rm package-lock.json
 
-bashCopynpm run dev
+# Install fresh dependencies
+npm install --legacy-peer-deps
+```
 
-Open http://localhost:3000 to see your changes
-Build for production:
-
-bashCopynpm run build
-Deployment
-The website is automatically deployed to GitHub Pages when changes are pushed to the main branch.
-Local Setup
-bashCopy# Clone the repository
-git clone git@github.com:Shakeri-Lab/shakeri-lab.github.io.git
-
-# Install dependencies
-npm install
-
-# Run development server
+3. Run the development server:
+```bash
 npm run dev
-Contact
-For website maintenance questions, contact:
+```
 
-Heman Shakeri
+The site will be available at [http://localhost:3000](http://localhost:3000)
+
+## Making Updates
+
+### Getting Latest Changes
+Before making any changes, always pull the latest version:
+```bash
+git pull origin main
+```
+
+### Making and Testing Changes
+1. Make your changes to the website
+2. Test locally using:
+```bash
+npm run dev
+```
+
+### Deploying Changes
+1. Stage your changes:
+```bash
+git add .
+```
+
+2. Commit your changes:
+```bash
+git commit -m "Description of your changes"
+```
+
+3. Push to GitHub:
+```bash
+git push
+```
+
+The site will automatically deploy through GitHub Actions. You can monitor the deployment status in the "Actions" tab of the repository.
+
+## Troubleshooting
+
+### Dependency Issues
+If you encounter dependency conflicts, try:
+```bash
+rm -rf node_modules
+rm package-lock.json
+npm install --legacy-peer-deps
+```
+
+### Deployment Issues
+- Check the GitHub Actions tab for build errors
+- Ensure all dependencies are properly installed
+- Verify that the content in next.config.js is correct
+
+## Project Structure
+```
+lab-website/
+├── components/     # Reusable React components
+├── pages/          # Next.js pages
+├── public/         # Static assets
+├── styles/         # CSS styles
+└── ...
+```
+
+## Contact
+For questions or issues, please open an issue on GitHub.

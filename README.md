@@ -103,7 +103,7 @@ git commit -m "Description of your changes"
 
 3. Push to GitHub:
 ```bash
-git push
+git push -u origin main
 ```
 
 The site will automatically deploy through GitHub Actions. You can monitor the deployment status in the "Actions" tab of the repository.

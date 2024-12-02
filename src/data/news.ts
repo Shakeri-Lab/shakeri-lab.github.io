@@ -1,7 +1,52 @@
 import { NewsItem } from '@/types';
 
 export const news: NewsItem[] = [
-  // Most recent first
+  {
+    date: "November 20, 2024",
+    title: "LaunchPad Grant Award",
+    content: "Dynamo Lab received a $200k grant from LaunchPad for Diabetes to pilot trial the use of advanced ML tools in Artificial Pancreas technology. The program supports innovative solutions for Type 1 or Type 2 diabetes treatment, focusing on translational research projects that address unmet clinical needs.",
+    links: [{
+      text: "Learn More",
+      url: "https://research.virginia.edu/initiatives/translational-research/launchpad"
+    }]
+  },
+  {
+    date: "November 18, 2024",
+    title: "Invited Talk at SIAM CSE25",
+    content: "Dr. Shakeri is invited to give a talk at the SIAM Conference on Computational Science and Engineering (March 3-7, 2025).",
+    links: [{
+      text: "Conference Program",
+      url: "https://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=82463"
+    }]
+  },
+  {
+    date: "October 7, 2024",
+    title: "DAC Award Received",
+    content: "Dynamo lab received an award from Research Computing and the Data Analytics Center (DAC) to support research tasks and RC services.",
+    links: [{
+      text: "Award Details",
+      url: "https://www.rc.virginia.edu/service/dac/awards/"
+    }]
+  },
+  {
+    date: "April 6, 2023",
+    title: "Oracle for Research Award",
+    content: "Received $50k Cloud credits from Oracle for Research to cover Cloud resources.",
+  },
+  {
+    date: "August 2020",
+    title: "NCI COVID-19 Grant",
+    content: "Received $426,972 two-year National Institutes of Health grant for 'Risk Prediction for COVID-19: Vibrent Health/UVA'. Dr. Shakeri serves as Co-Investigator.",
+  },
+  {
+    date: "2024",
+    title: "UVA Research Communications Fellow",
+    content: "Dr. Shakeri is named UVA Research Communications Fellow. The six-month program provides media training to enhance faculty's ability to discuss research with lay audiences.",
+    links: [{
+      text: "Read More",
+      url: "https://datascience.virginia.edu/news/two-data-science-faculty-named-uva-research-communications-fellows"
+    }]
+  },
   {
     date: "November 2024",
     title: "Paper Accepted at NeurIPS Workshop",

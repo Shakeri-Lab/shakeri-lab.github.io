@@ -5,8 +5,11 @@ const nextConfig: NextConfig = {
   output: 'export',
   images: {
     unoptimized: true,
+  },
+  // Add dark mode support
+  theme: {
+    darkMode: 'class',
   }
-  // basePath removed since we're using shakeri-lab.github.io
 };
 
 export default nextConfig;

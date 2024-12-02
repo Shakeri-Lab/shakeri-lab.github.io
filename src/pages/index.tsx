@@ -10,37 +10,36 @@ export default function Component() {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="border-b bg-white">
-        <div className="container mx-auto flex items-center justify-between p-4">
-          <div className="w-[120px]">
-            <Image
-		  src="/logo.svg"  // Updated from logo_compressed_BW.jpg
- 		 alt="DYNAMO Lab Logo"
- 		 width={120}
-  		height={120}
-  		className="h-auto w-full"
-  priority  // Add this to ensure the SVG loads quickly
-/>
-          </div>
-          <div className="text-center max-w-2xl">
-            <h1 className="text-3xl font-bold">DYNAMO Lab</h1>
-            <p className="text-sm text-muted-foreground mt-2">
-              Advancing Machine Intelligence for Dynamical Systems and Control in Biomedical Applications
-            </p>
-          </div>
-          <div className="w-[300px]">
- 		 <Image
- 		   src="/SDS_Logo_Black-Screen.png"  // Updated path to local file
- 		   alt="School of Data Science, University of Virginia"
- 		   width={300}
-  		  height={75}
-  		  className="h-auto w-full"
-  		  priority  // Add priority for faster loading
- 	 />
-	</div>
-        </div>
-      </header>
-
+      <header className="border-b bg-white">  {/* Remove dark:bg-gray-900 */}
+  <div className="container mx-auto flex items-center justify-between p-4">
+    <div className="w-[120px]">
+      <Image
+        src="/logo.svg"
+        alt="DYNAMO Lab Logo"
+        width={120}
+        height={120}
+        className="h-auto w-full"
+        priority
+      />
+    </div>
+    <div className="text-center max-w-2xl">
+      <h1 className="text-3xl font-bold text-black">DYNAMO Lab</h1>
+      <p className="text-sm text-gray-600 mt-2">
+        Advancing Machine Intelligence for Dynamical Systems and Control in Biomedical Applications
+      </p>
+    </div>
+    <div className="w-[300px]">
+      <Image
+        src="/SDS_Logo_Color-Screen.png"
+        alt="School of Data Science, University of Virginia"
+        width={300}
+        height={75}
+        className="h-auto w-full"
+        priority
+      />
+    </div>
+  </div>
+</header>
       {/* Main Content */}
       <main className="container mx-auto py-8 px-4">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">

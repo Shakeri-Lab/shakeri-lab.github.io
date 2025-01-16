@@ -7,7 +7,10 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: write      # This is important
+      pages: write        # Add this
+      id-token: write     # Add this
     steps:
       - uses: actions/checkout@v4
 
@@ -17,7 +20,7 @@ jobs:
           node-version: '18'
 
       - name: Install dependencies
-        run: npm install --legacy-peer-deps  # Added flag here
+        run: npm install --legacy-peer-deps
 
       - name: Build
         run: npm run build
@@ -27,3 +30,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./out
+          force_orphan: true

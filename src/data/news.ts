@@ -2,6 +2,33 @@ import { NewsItem } from '@/types';
 
 export const news: NewsItem[] = [
   {
+    date: "January 15 2025",
+    title: "Computational Genomics Pilot Award",
+    content: "Our lab received a $25,000 Computational Genomics and Data Science Pilot Award (FY2025) for the project 'Sex differences in the melanoma tumor microenvironment and clinical outcomes after immune checkpoint inhibitor therapy'. This research will investigate how biological sex influences treatment responses in melanoma patients, combining computational approaches with genomic data analysis to improve personalized immunotherapy strategies.",
+    links: [{
+      text: "Cancer Center Awards",
+      url: "https://uvacancercenter.infoready4.com/CompetitionSpace/#freeformCompetitionDetail/1954028"  
+    }]
+  },
+  {
+    date: "January 2025",
+    title: "Two Abstracts Accepted at 2025 ARVO Annual Meeting",
+    content: "The lab will present two abstracts at the 2025 ARVO Annual Meeting (May 4-8). The first abstract, 'An Automated Pipeline for Converting Unstructured Visual Acuity Clinical Text to Standardized Measurements,' focuses on developing automated tools for clinical data standardization. The second abstract, 'Identification of Visual Impairment Risk Factors in Southwest Virginia: An Analysis of an Electronic Health Records Based Registry,' examines regional health patterns using EHR data. Both works demonstrate our lab's commitment to improving healthcare through data science and machine learning approaches.",
+    links: [{
+      text: "ARVO Annual Meeting",
+      url: "https://www.arvo.org/annual-meeting/"
+    }]
+  },
+  {
+    date: "December 20, 2024",
+    title: "Paper Accepted at ATTD 2025",
+    content: "Our work on 'Deep Reinforcement Learning Bolus Priming for Intelligent Prandial Management' has been accepted for presentation at the 18th International Conference on Advanced Technologies & Treatments for Diabetes (ATTD 2025) in Amsterdam, The Netherlands, March 19-22, 2025. This research advances our work on intelligent artificial pancreas systems using deep reinforcement learning methods.",
+    links: [{
+      text: "Conference Website",
+      url: "https://attd.kenes.com/"
+    }]
+  },
+  {
     date: "November 20, 2024",
     title: "LaunchPad Grant Award",
     content: "Dynamo Lab received a $200k grant from LaunchPad for Diabetes to pilot trial the use of advanced ML tools in Artificial Pancreas technology. The program supports innovative solutions for Type 1 or Type 2 diabetes treatment, focusing on translational research projects that address unmet clinical needs.",

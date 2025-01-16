@@ -4,7 +4,7 @@ export const news: NewsItem[] = [
   {
     date: "January 15 2025",
     title: "Computational Genomics Pilot Award",
-    content: "Our lab received a $25,000 Computational Genomics and Data Science Pilot Award (FY2025) for the project 'Sex differences in the melanoma tumor microenvironment and clinical outcomes after immune checkpoint inhibitor therapy'. This research will investigate how biological sex influences treatment responses in melanoma patients, combining computational approaches with genomic data analysis to improve personalized immunotherapy strategies.",
+    content: "Our lab received a $25,000 Computational Genomics and Data Science Pilot Award (FY2025) for the project Sex differences in the melanoma tumor microenvironment and clinical outcomes after immune checkpoint inhibitor therapy.",
     links: [{
       text: "Cancer Center Awards",
       url: "https://uvacancercenter.infoready4.com/CompetitionSpace/#freeformCompetitionDetail/1954028"  
@@ -13,7 +13,7 @@ export const news: NewsItem[] = [
   {
     date: "January 2025",
     title: "Two Abstracts Accepted at 2025 ARVO Annual Meeting",
-    content: "The lab will present two abstracts at the 2025 ARVO Annual Meeting (May 4-8). The first abstract, 'An Automated Pipeline for Converting Unstructured Visual Acuity Clinical Text to Standardized Measurements,' focuses on developing automated tools for clinical data standardization. The second abstract, 'Identification of Visual Impairment Risk Factors in Southwest Virginia: An Analysis of an Electronic Health Records Based Registry,' examines regional health patterns using EHR data. Both works demonstrate our lab's commitment to improving healthcare through data science and machine learning approaches.",
+    content: "The lab will present two abstracts at the 2025 ARVO Annual Meeting (May 4-8). The first abstract, 'An Automated Pipeline for Converting Unstructured Visual Acuity Clinical Text to Standardized Measurements,' and the second, 'Identification of Visual Impairment Risk Factors in Southwest Virginia: An Analysis of an Electronic Health Records Based Registry,' examines regional health patterns using EHR data. Both works demonstrate our lab's commitment to improving healthcare through data science and machine learning approaches.",
     links: [{
       text: "ARVO Annual Meeting",
       url: "https://www.arvo.org/annual-meeting/"

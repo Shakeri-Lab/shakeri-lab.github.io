@@ -13,7 +13,7 @@ export const news: NewsItem[] = [
   {
     date: "January 2025",
     title: "Two Abstracts Accepted at 2025 ARVO Annual Meeting",
-    content: "The lab will present two abstracts at the 2025 ARVO Annual Meeting (May 4-8). The first abstract, 'An Automated Pipeline for Converting Unstructured Visual Acuity Clinical Text to Standardized Measurements,' and the second, 'Identification of Visual Impairment Risk Factors in Southwest Virginia: An Analysis of an Electronic Health Records Based Registry,' examines regional health patterns using EHR data. Both works demonstrate our lab's commitment to improving healthcare through data science and machine learning approaches.",
+    content: "The lab will present two abstracts at the 2025 ARVO Annual Meeting (May 4-8) on 'An Automated Pipeline for Converting Unstructured Visual Acuity Clinical Text to Standardized Measurements,' and 'Identification of Visual Impairment Risk Factors in Southwest Virginia' .",
     links: [{
       text: "ARVO Annual Meeting",
       url: "https://www.arvo.org/annual-meeting/"

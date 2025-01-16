@@ -21,6 +21,11 @@ export const team: Team = {
       name: "Alireza Vatan Parast",
       title: "PhD Student",
       link: "https://www.linkedin.com/in/alireza-vatanparast-7ab1902a1/"
+    },
+    {
+      name: "Alireza Namazi", 
+      title: "PhD Student",
+      link: "https://www.linkedin.com/in/alireza-namazi-b143681b7/"
     }
   ],
   alumni: [

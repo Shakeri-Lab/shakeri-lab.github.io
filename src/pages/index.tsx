@@ -60,8 +60,10 @@ export default function Component() {
                 <span>Software</span>
               </Link>
                 <Link 
-                  href="https://scholar.google.com/citations?user=YourID" 
+                  href="https://scholar.google.com/citations?user=zFIIhGMAAAAJ&hl=en&oi=ao" 
                   className="flex items-center gap-2 hover:text-primary transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <GraduationCap className="h-5 w-5" />
                   <span>Publications</span>

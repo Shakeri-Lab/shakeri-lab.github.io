@@ -2,6 +2,41 @@
 
 This is the official website for our lab, built with Next.js and deployed on GitHub Pages.
 
+## Website Structure
+The website includes:
+- Research Overview
+- Current Projects
+- Team Members
+- News and Updates
+- Quick Links (Software & Publications)
+- Contact Information
+
+## Content Updates Guide
+
+### Updating News
+News items are stored in `src/data/news.ts`. Add new items in this format:
+```typescript
+{
+  date: "Month DD, YYYY",
+  title: "Your News Title",
+  content: "Your news content",
+  links: [{
+    text: "Link Text",
+    url: "URL"
+  }]
+}
+```
+
+### Updating Team Members
+Team information is stored in `src/data/team.ts`. Update members in this format:
+```typescript
+{
+  name: "Member Name",
+  title: "Member Title",
+  link: "Profile URL"
+}
+```
+
 ## Development Setup
 
 ### On Mac
@@ -138,3 +173,31 @@ lab-website/
 
 ## Contact
 For questions or issues, please contact the lab directly or open an issue on GitHub.
+
+## Configuration Files
+Key configuration files:
+- `next.config.ts` - Next.js configuration
+- `tailwind.config.js` - Tailwind CSS styling
+- `.github/workflows/deploy.yml` - Deployment configuration
+
+## Development Guidelines
+- Keep commits focused and descriptive
+- Test all changes locally before pushing
+- Follow the existing code style and formatting
+- Add comments for complex logic
+- Update README when adding new features
+
+## Common Tasks
+
+### Adding a News Item
+1. Open `src/data/news.ts`
+2. Add your news entry at the top of the array
+3. Follow the existing format
+4. Test locally
+5. Commit and push
+
+### Updating Team Information
+1. Open `src/data/team.ts`
+2. Modify the relevant section (PI, currentMembers, or alumni)
+3. Test locally
+4. Commit and push

@@ -3,6 +3,15 @@ import { NewsItem } from '@/types';
 export const news: NewsItem[] = [
   // 2025
   {
+    date: "April 10, 2025",
+    title: "Forbes Features UVA's AI-Driven Diabetes Management Research",
+    content: "UVA professor Heman Shakeri's work on an experimental, AI-driven insulin delivery system was featured in Forbes magazine. The system uses reinforcement learning to improve automated insulin delivery, potentially eliminating the need for manual intervention and benefiting vulnerable populations like children with Type 1 diabetes.",
+    links: [{
+      text: "Read in Forbes",
+      url: "https://click.mc.virginia.edu/?qs=ac9da0a33b553dc8f1a2462294d094edf0a6fe1f4979bb67f9ef1c3e4ced7142d3016a94a2a0763de2399cdbd51e4abefbc32468b97edefba578acedbf91b6f1"
+    }]
+  },
+  {
     date: "March 22, 2025",
     title: "Paper Accepted as Spotlight at ICLR MLGenX 2025 Workshop",
     content: "Our paper 'Learning Non-Equilibrium Signaling Dynamics in Single-Cell Perturbation Dynamics' has been accepted as a spotlight paper at the ICLR MLGenX 2025 Workshop."
@@ -27,7 +36,7 @@ export const news: NewsItem[] = [
   },
   {
     date: "January 29, 2025",
-    title: "School of Data Science Capital One Data Design Fellowship",
+    title: "Capital One Data Design Fellowship",
     content: "Dr. Shakeri has been appointed a School of Data Science Capital One Data Design Fellow for 2025-2026. The project will use Multi-Marginal Stochastic Flow Matching (MMSFM) to capture the dynamics of high frequency financial transactions, with applications to risk management, trading strategy development, and market stability analysis. The fellowship comes with a $55,000 discretionary fund.",
   },
   {

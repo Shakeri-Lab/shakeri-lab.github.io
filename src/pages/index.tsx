@@ -258,8 +258,8 @@ export default function Component() {
               <CardTitle className="text-base">News</CardTitle>
             </CardHeader>
             <CardContent className="relative">
-              {/* Increased height from 600px to 900px (1.5x) */}
-              <div className="h-[900px] overflow-y-auto pr-2 space-y-4 scrollbar-thin">
+              {/* Increased height from 900px to 1350px (50% more) */}
+              <div className="h-[1350px] overflow-y-auto pr-2 space-y-4 scrollbar-thin">
                 {news.map((item, index) => (
                   <motion.div
                     key={index}

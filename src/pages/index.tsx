@@ -14,7 +14,7 @@ export default function Component() {
   <div className="container mx-auto flex items-center justify-between p-4">
     <div className="w-[120px]">
       <Image
-        src="/logo.svg"
+        src="/logo_dynamo.png"
         alt="DYNAMO Lab Logo"
         width={120}
         height={120}

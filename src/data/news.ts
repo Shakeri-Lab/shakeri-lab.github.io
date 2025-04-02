@@ -3,6 +3,34 @@ import { NewsItem } from '@/types';
 export const news: NewsItem[] = [
   // 2025
   {
+    date: "March 22, 2025",
+    title: "Paper Accepted as Spotlight at ICLR MLGenX 2025 Workshop",
+    content: "Our paper 'Learning Non-Equilibrium Signaling Dynamics in Single-Cell Perturbation Dynamics' has been accepted as a spotlight paper at the ICLR MLGenX 2025 Workshop."
+  },
+  {
+    date: "March 3, 2025",
+    title: "Paper Accepted at Engineering Diabetes Technology 2025",
+    content: "Our paper 'Online Meal Detection Based on CGM Data Dynamics' has been accepted for oral presentation at the IFAC EDT 2025, to be held in Valencia, Spain, May 8-9, 2025.",
+    links: [{
+      text: "Conference Website",
+      url: "https://www.ifac-control.org/conferences/engineering-diabetes-technology-1st-edt-2025tm"
+    }]
+  },
+  {
+    date: "February 20, 2025",
+    title: "Invited Speaker at SIAM Conference on Dynamical Systems",
+    content: "Dr. Shakeri will be an invited speaker in the 'Koopman Operator in Control - Part II of II' session at the 2025 SIAM Conference on Dynamical Systems, presenting 'Control of Complex Network Dynamics with Koopman: Tweaking Local Interactions for Desired Emergent Dynamics'.",
+    links: [{
+      text: "Conference Program",
+      url: "https://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=82682"
+    }]
+  },
+  {
+    date: "January 29, 2025",
+    title: "School of Data Science Capital One Data Design Fellowship",
+    content: "Dr. Shakeri has been appointed a School of Data Science Capital One Data Design Fellow for 2025-2026. The project will use Multi-Marginal Stochastic Flow Matching (MMSFM) to capture the dynamics of high frequency financial transactions, with applications to risk management, trading strategy development, and market stability analysis. The fellowship comes with a $55,000 discretionary fund.",
+  },
+  {
     date: "January 15, 2025",
     title: "Computational Genomics Pilot Award",
     content: "Our lab received a $25,000 Computational Genomics and Data Science Pilot Award (FY2025) for the project 'Sex differences in the melanoma tumor microenvironment and clinical outcomes after immune checkpoint inhibitor therapy'.",

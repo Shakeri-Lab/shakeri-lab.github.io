@@ -145,9 +145,6 @@ export default function Component() {
     </Card>
 
             <Card>
-              <CardHeader>
-                <CardTitle className="text-base">Lab Video</CardTitle>
-              </CardHeader>
               <CardContent className="aspect-video">
                 <iframe 
                   width="100%" 

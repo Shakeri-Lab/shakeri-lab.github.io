@@ -146,6 +146,24 @@ export default function Component() {
 
             <Card>
               <CardHeader>
+                <CardTitle className="text-base">Lab Video</CardTitle>
+              </CardHeader>
+              <CardContent className="aspect-video">
+                <iframe 
+                  width="100%" 
+                  height="100%" 
+                  src="https://www.youtube.com/embed/6c3mOsUm3cI" 
+                  title="DYNAMO Lab Video"
+                  frameBorder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowFullScreen
+                  className="rounded-md">
+                </iframe>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
                 <CardTitle className="text-base">Join Our Team</CardTitle>
               </CardHeader>
               <CardContent>

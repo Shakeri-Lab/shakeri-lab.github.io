@@ -26,6 +26,11 @@ export const team: Team = {
       name: "Alireza Namazi", 
       title: "PhD Student",
       link: "https://www.linkedin.com/in/alireza-namazi-b143681b7/"
+    },
+    {
+      name: "Amirreza Dolatpour Fathkouhi",
+      title: "PhD Student",
+      link: "https://www.linkedin.com/in/amirreza-dolatpour-fathkouhi/"
     }
   ],
   alumni: [

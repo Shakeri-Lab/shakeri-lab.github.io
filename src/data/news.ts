@@ -3,7 +3,7 @@ import { NewsItem } from '@/types';
 export const news: NewsItem[] = [
   // 2025
   {
-    date: "April 10, 2025",
+    date: "March 18, 2025",
     title: "Forbes Features UVA's AI-Driven Diabetes Management Research",
     content: "UVA professor Heman Shakeri's AI-driven insulin delivery system using reinforcement learning was featured in Forbes magazine, highlighting benefits for children with Type 1 diabetes.",
     links: [{

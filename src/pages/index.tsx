@@ -41,7 +41,7 @@ export default function Component() {
                 <div className="flex flex-col items-center">
                   <div className="w-[100px] mb-4">
                     <Image
-                      src="/logo_dynamo.png"
+                      src="/dynamo-lab-logo.png"
                       alt="DYNAMO Lab Logo"
                       width={100}
                       height={100}

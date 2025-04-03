@@ -38,60 +38,44 @@ export default function Component() {
           <div className="lg:col-span-3 space-y-6">
             <Card className="dark:bg-gray-800 dark:border-gray-700">
               <CardContent className="py-6">
-                <div className="flex flex-col space-y-4">
-                  {/* Top section with logo and lab name/description in horizontal layout */}
-                  <div className="flex flex-col md:flex-row md:items-center md:space-x-4">
-                    <div className="w-[100px] mx-auto md:mx-0">
-                      <Image
-                        src="/dynamo-lab-logo.png"
-                        alt="DYNAMO Lab Logo"
-                        width={100}
-                        height={100}
-                        className="h-auto w-full"
-                        priority
-                      />
-                    </div>
-                    <div className="text-center md:text-left">
-                      <h1 className="text-2xl font-bold dark:text-white mb-2">DYNAMO Lab</h1>
-                      <p className="text-sm text-gray-600 dark:text-gray-300">
-                        Advancing Machine Intelligence for Dynamical Systems and Control in Biomedical Applications
-                      </p>
-                    </div>
-                    <div className="md:ml-auto">
-                      <button 
-                        onClick={toggleTheme} 
-                        className="p-1 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
-                        aria-label="Toggle dark mode"
-                      >
-                        {theme === "dark" ? 
-                          <Sun className="h-5 w-5 text-yellow-500" /> : 
-                          <Moon className="h-5 w-5 text-gray-500" />
-                        }
-                      </button>
-                    </div>
+                <div className="flex flex-col items-center">
+                  {/* Title above logo */}
+                  <h1 className="text-2xl font-bold dark:text-white mb-4">DYNAMO Lab</h1>
+                  
+                  {/* Logo */}
+                  <div className="w-[100px] mb-4">
+                    <Image
+                      src="/dynamo-lab-logo.png"
+                      alt="DYNAMO Lab Logo"
+                      width={100}
+                      height={100}
+                      className="h-auto w-full"
+                      priority
+                    />
                   </div>
                   
-                  {/* Contact info */}
-                  <div className="w-full text-sm space-y-2">
-                    <div className="flex items-center gap-2">
-                      <Mail className="h-4 w-4 text-gray-500 dark:text-gray-400" />
-                      <Link href="mailto:hs9hd@virginia.edu" className="text-primary hover:underline">hs9hd at virginia dot edu</Link>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <MapPin className="h-4 w-4 text-gray-500 dark:text-gray-400" />
-                      <p className="dark:text-gray-300">Room 436, 1919 Ivy Rd, Charlottesville, VA 22903</p>
-                    </div>
-                  </div>
+                  {/* Description below logo */}
+                  <p className="text-sm text-gray-600 dark:text-gray-300 text-center mb-6 max-w-md">
+                    Advancing Machine Intelligence for Dynamical Systems and Control in Biomedical Applications
+                  </p>
                   
-                  {/* Social links centered at bottom */}
-                  <div className="flex justify-center gap-4 pt-2">
+                  {/* All icons in a row at the bottom */}
+                  <div className="flex justify-center items-center gap-6 pt-2">
                     <Link 
-                      href="https://github.com/Shakeri-Lab" 
+                      href="mailto:hs9hd@virginia.edu" 
+                      className="hover:text-primary transition-colors"
+                      title="hs9hd at virginia dot edu"
+                    >
+                      <Mail className="h-5 w-5" />
+                    </Link>
+                    <Link 
+                      href="https://www.google.com/maps/place/1919+Ivy+Rd,+Charlottesville,+VA+22903" 
                       className="hover:text-primary transition-colors"
                       target="_blank"
                       rel="noopener noreferrer"
+                      title="1919 Ivy Rd, Charlottesville, VA 22903"
                     >
-                      <Github className="h-5 w-5" />
+                      <MapPin className="h-5 w-5" />
                     </Link>
                     <Link 
                       href="https://scholar.google.com/citations?user=zFIIhGMAAAAJ&hl=en&oi=ao" 
@@ -101,6 +85,24 @@ export default function Component() {
                     >
                       <GraduationCap className="h-5 w-5" />
                     </Link>
+                    <Link 
+                      href="https://github.com/Shakeri-Lab" 
+                      className="hover:text-primary transition-colors"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Github className="h-5 w-5" />
+                    </Link>
+                    <button 
+                      onClick={toggleTheme} 
+                      className="p-1 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+                      aria-label="Toggle dark mode"
+                    >
+                      {theme === "dark" ? 
+                        <Sun className="h-5 w-5 text-yellow-500" /> : 
+                        <Moon className="h-5 w-5 text-gray-500" />
+                      }
+                    </button>
                   </div>
                 </div>
               </CardContent>

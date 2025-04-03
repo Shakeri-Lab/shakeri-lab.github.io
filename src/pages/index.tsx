@@ -9,65 +9,47 @@ import { motion } from "framer-motion"
 export default function Component() {
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="border-b bg-white">  {/* Remove dark:bg-gray-900 */}
-  <div className="container mx-auto flex items-center justify-between p-4">
-    <div className="w-[120px]">
-      <Image
-        src="/logo_dynamo.png"
-        alt="DYNAMO Lab Logo"
-        width={120}
-        height={120}
-        className="h-auto w-full"
-        priority
-      />
-    </div>
-    <div className="text-center max-w-2xl">
-      <h1 className="text-3xl font-bold text-black">DYNAMO Lab</h1>
-      <p className="text-sm text-gray-600 mt-2">
-        Advancing Machine Intelligence for Dynamical Systems and Control in Biomedical Applications
-      </p>
-    </div>
-    <div className="w-[300px]">
-      <Image
-        src="/SDS_Logo_Color-Screen.png"
-        alt="School of Data Science, University of Virginia"
-        width={300}
-        height={75}
-        className="h-auto w-full"
-        priority
-      />
-    </div>
-  </div>
-</header>
       {/* Main Content */}
       <main className="container mx-auto py-8 px-4">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           {/* Left Column */}
           <div className="lg:col-span-3 space-y-6">
             <Card>
-              <CardHeader>
-                <CardTitle className="text-base">Quick Links</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-              <Link 
-                href="https://github.com/Shakeri-Lab" 
-                className="flex items-center gap-2 hover:text-primary transition-colors"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Github className="h-5 w-5" />
-                <span>Software</span>
-              </Link>
-                <Link 
-                  href="https://scholar.google.com/citations?user=zFIIhGMAAAAJ&hl=en&oi=ao" 
-                  className="flex items-center gap-2 hover:text-primary transition-colors"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <GraduationCap className="h-5 w-5" />
-                  <span>Publications</span>
-                </Link>
+              <CardContent className="py-6">
+                <div className="flex flex-col items-center mb-4">
+                  <div className="w-[100px] mb-4">
+                    <Image
+                      src="/logo_dynamo.png"
+                      alt="DYNAMO Lab Logo"
+                      width={100}
+                      height={100}
+                      className="h-auto w-full"
+                      priority
+                    />
+                  </div>
+                  <h1 className="text-2xl font-bold text-center mb-2">DYNAMO Lab</h1>
+                  <p className="text-sm text-gray-600 text-center mb-4">
+                    Advancing Machine Intelligence for Dynamical Systems and Control in Biomedical Applications
+                  </p>
+                </div>
+                <div className="flex justify-center gap-4 mt-4">
+                  <Link 
+                    href="https://github.com/Shakeri-Lab" 
+                    className="flex items-center gap-2 hover:text-primary transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Github className="h-5 w-5" />
+                  </Link>
+                  <Link 
+                    href="https://scholar.google.com/citations?user=zFIIhGMAAAAJ&hl=en&oi=ao" 
+                    className="flex items-center gap-2 hover:text-primary transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <GraduationCap className="h-5 w-5" />
+                  </Link>
+                </div>
               </CardContent>
             </Card>
 

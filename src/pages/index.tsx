@@ -3,7 +3,7 @@ import { team } from "@/data/team";
 import Image from "next/image"
 import Link from "next/link"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Github, GraduationCap } from "lucide-react"
+import { Github, GraduationCap, Mail, MapPin } from "lucide-react"
 import { motion } from "framer-motion"
 
 export default function Component() {
@@ -16,10 +16,10 @@ export default function Component() {
           <div className="lg:col-span-3 space-y-6">
             <Card>
               <CardContent className="py-6">
-                <div className="flex flex-col items-center mb-4">
+                <div className="flex flex-col items-center">
                   <div className="w-[100px] mb-4">
                     <Image
-                      src="/logo_dynamo.png"
+                      src="/logo.svg"
                       alt="DYNAMO Lab Logo"
                       width={100}
                       height={100}
@@ -27,104 +27,104 @@ export default function Component() {
                       priority
                     />
                   </div>
-                  <h1 className="text-2xl font-bold text-center mb-2">DYNAMO Lab</h1>
-                  <p className="text-sm text-gray-600 text-center mb-4">
+                  <div className="flex items-center gap-3 mb-2">
+                    <h1 className="text-2xl font-bold">DYNAMO Lab</h1>
+                    <Link 
+                      href="https://github.com/Shakeri-Lab" 
+                      className="hover:text-primary transition-colors"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Github className="h-5 w-5" />
+                    </Link>
+                    <Link 
+                      href="https://scholar.google.com/citations?user=zFIIhGMAAAAJ&hl=en&oi=ao" 
+                      className="hover:text-primary transition-colors"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <GraduationCap className="h-5 w-5" />
+                    </Link>
+                  </div>
+                  <p className="text-sm text-gray-600 text-center mb-6">
                     Advancing Machine Intelligence for Dynamical Systems and Control in Biomedical Applications
                   </p>
-                </div>
-                <div className="flex justify-center gap-4 mt-4">
-                  <Link 
-                    href="https://github.com/Shakeri-Lab" 
-                    className="flex items-center gap-2 hover:text-primary transition-colors"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Github className="h-5 w-5" />
-                  </Link>
-                  <Link 
-                    href="https://scholar.google.com/citations?user=zFIIhGMAAAAJ&hl=en&oi=ao" 
-                    className="flex items-center gap-2 hover:text-primary transition-colors"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <GraduationCap className="h-5 w-5" />
-                  </Link>
+                  <div className="w-full text-sm space-y-2">
+                    <div className="flex items-center gap-2">
+                      <Mail className="h-4 w-4 text-gray-500" />
+                      <Link href="mailto:hs9hd@virginia.edu" className="text-primary hover:underline">hs9hd at virginia dot edu</Link>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <MapPin className="h-4 w-4 text-gray-500" />
+                      <p>Room 436, 1919 Ivy Rd, Charlottesville, VA 22903</p>
+                    </div>
+                  </div>
                 </div>
               </CardContent>
             </Card>
 
             <Card>
-            <CardHeader>
-              <CardTitle className="text-base">Contact Info</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-sm">Email: <Link href="mailto:hs9hd@virginia.edu" className="text-primary hover:underline">hs9hd at virginia dot edu</Link></p>
-              <p className="text-sm mt-2">Office: Room 436, 1919 Ivy Rd, Charlottesville, VA 22903</p>
-            </CardContent>
-             </Card>
-
-            <Card>
-      <CardHeader>
-        <CardTitle className="text-base">Team</CardTitle>
-      </CardHeader>
-      <CardContent>
-        <div className="space-y-4">
-          <div>
-            <h3 className="font-semibold text-sm text-zinc-700">Principal Investigator</h3>
-            <Link 
-              href={team.pi.link} 
-              className="text-sm text-primary hover:underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {team.pi.name}
-            </Link>
-          </div>
-          <div>
-            <h3 className="font-semibold text-sm text-zinc-700">Current Members</h3>
-            <ul className="space-y-2">
-              {team.currentMembers.map((member, index) => (
-                <li key={index} className="text-sm">
-                  {member.link ? (
+              <CardHeader>
+                <CardTitle className="text-base">Team</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <div>
+                    <h3 className="font-semibold text-sm text-zinc-700">Principal Investigator</h3>
                     <Link 
-                      href={member.link} 
-                      className="text-primary hover:underline"
+                      href={team.pi.link} 
+                      className="text-sm text-primary hover:underline"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      {member.name}
+                      {team.pi.name}
                     </Link>
-                  ) : (
-                    member.name
-                  )} - {member.title}
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h3 className="font-semibold text-sm text-zinc-700">Alumni</h3>
-            <ul className="space-y-2">
-              {team.alumni.map((member, index) => (
-                <li key={index} className="text-sm">
-                  {member.link ? (
-                    <Link 
-                      href={member.link} 
-                      className="text-primary hover:underline"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {member.name}
-                    </Link>
-                  ) : (
-                    member.name
-                  )} - {member.title}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </CardContent>
-    </Card>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-sm text-zinc-700">Current Members</h3>
+                    <ul className="space-y-2">
+                      {team.currentMembers.map((member, index) => (
+                        <li key={index} className="text-sm">
+                          {member.link ? (
+                            <Link 
+                              href={member.link} 
+                              className="text-primary hover:underline"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              {member.name}
+                            </Link>
+                          ) : (
+                            member.name
+                          )} - {member.title}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-sm text-zinc-700">Alumni</h3>
+                    <ul className="space-y-2">
+                      {team.alumni.map((member, index) => (
+                        <li key={index} className="text-sm">
+                          {member.link ? (
+                            <Link 
+                              href={member.link} 
+                              className="text-primary hover:underline"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              {member.name}
+                            </Link>
+                          ) : (
+                            member.name
+                          )} - {member.title}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
 
             <Card>
               <CardContent className="aspect-video">

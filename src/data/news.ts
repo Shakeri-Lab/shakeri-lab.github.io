@@ -3,6 +3,15 @@ import { NewsItem } from '@/types';
 export const news: NewsItem[] = [
   // 2025
   {
+    date: "July 2025",
+    title: "Paper Accepted to ICML 2025",
+    content: "Our paper 'Multi-Marginal Stochastic Flow Matching for High-Dimensional Snapshot Data at Irregular Time Points' has been accepted to ICML 2025.",
+    links: [{
+      text: "Read Paper",
+      url: "https://openreview.net/pdf?id=ZLyb8DwXXE"
+    }]
+  },
+  {
     date: "March 18, 2025",
     title: "Forbes Features UVA's AI-Driven Diabetes Management Research",
     content: "UVA professor Heman Shakeri's AI-driven insulin delivery system using reinforcement learning was featured in Forbes magazine, highlighting benefits for children with Type 1 diabetes.",

@@ -23,7 +23,11 @@ export const news: NewsItem[] = [
   {
     date: "March 22, 2025",
     title: "Paper Accepted as Spotlight at ICLR MLGenX 2025 Workshop",
-    content: "Our paper 'Learning Non-Equilibrium Signaling Dynamics in Single-Cell Perturbation Dynamics' has been accepted as a spotlight paper at the ICLR MLGenX 2025 Workshop."
+    content: "Our paper 'Learning Non-Equilibrium Signaling Dynamics in Single-Cell Perturbation Dynamics' has been accepted as a spotlight paper at the ICLR MLGenX 2025 Workshop.",
+    links: [{
+      text: "Read Paper",
+      url: "https://openreview.net/pdf?id=0I1LsQEMin"
+    }]
   },
   {
     date: "March 3, 2025",

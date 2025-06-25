@@ -108,6 +108,23 @@ export default function Component() {
               </CardContent>
             </Card>
 
+            {/* Deep Learning Course Card */}
+            <Card className="dark:bg-gray-800 dark:border-gray-700">
+              <CardHeader>
+                <CardTitle className="text-base dark:text-white">Deep Learning Course</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <Link
+                  href="https://shakeri-lab.github.io/dl-course-site/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-primary hover:underline"
+                >
+                  Visit Course Website →
+                </Link>
+              </CardContent>
+            </Card>
+
             <Card className="dark:bg-gray-800 dark:border-gray-700">
               <CardHeader>
                 <CardTitle className="text-base dark:text-white">Team</CardTitle>

@@ -3,7 +3,7 @@ import { team } from "@/data/team";
 import Image from "next/image"
 import Link from "next/link"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Github, GraduationCap, Mail, MapPin, Moon, Sun } from "lucide-react"
+import { Github, GraduationCap, Mail, MapPin, Moon, Sun, Book } from "lucide-react"
 import { motion } from "framer-motion"
 import { useEffect, useState } from "react"
 
@@ -77,6 +77,15 @@ export default function Component() {
                     >
                       <MapPin className="h-5 w-5" />
                     </Link>
+                    <Link
+                      href="https://shakeri-lab.github.io/dl-course-site/"
+                      className="hover:text-primary transition-colors"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Deep Learning Course Website"
+                    >
+                      <Book className="h-5 w-5" />
+                    </Link>
                     <Link 
                       href="https://scholar.google.com/citations?user=zFIIhGMAAAAJ&hl=en&oi=ao" 
                       className="hover:text-primary transition-colors"
@@ -105,23 +114,6 @@ export default function Component() {
                     </button>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
-
-            {/* Deep Learning Course Card */}
-            <Card className="dark:bg-gray-800 dark:border-gray-700">
-              <CardHeader>
-                <CardTitle className="text-base dark:text-white">Deep Learning Course</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <Link
-                  href="https://shakeri-lab.github.io/dl-course-site/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-primary hover:underline"
-                >
-                  Visit Course Website →
-                </Link>
               </CardContent>
             </Card>
 

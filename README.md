@@ -78,7 +78,7 @@ rm -rf node_modules
 rm package-lock.json
 
 # Install fresh dependencies
-npm install --legacy-peer-deps
+npm install
 ```
 
 3. Run the development server:
@@ -150,7 +150,7 @@ If you encounter dependency conflicts, try:
 ```bash
 rm -rf node_modules
 rm package-lock.json
-npm install --legacy-peer-deps
+npm install
 ```
 
 ### Deployment Issues
@@ -201,3 +201,19 @@ Key configuration files:
 2. Modify the relevant section (PI, currentMembers, or alumni)
 3. Test locally
 4. Commit and push
+
+### Installing dependencies
+npm install        # legacy flag no longer needed
+
+### UI Links Row
+Email • Address • Deep-Learning Course • Google Scholar • GitHub • Dark-mode toggle
+
+### Dark-mode toggle
+The site uses Tailwind's `dark` class. Click the sun/moon icon to switch; preference is stored in `localStorage`.
+
+### New assets
+public/dynamo-lab-logo.png  (main logo for both themes)
+
+### GitHub Actions
+- upload-pages-artifact@v2
+- deploy-pages@v2

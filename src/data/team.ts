@@ -8,11 +8,6 @@ export const team: Team = {
   },
   currentMembers: [
     {
-      name: "Ali Tavasoli",
-      title: "PostDoc Research Scientist",
-      link: "https://www.linkedin.com/in/ali-tavasoli-9a45b459/"
-    },
-    {
       name: "Justin Lee",
       title: "PhD Student",
       link: "https://datascience.virginia.edu/people/justin-lee"
@@ -26,13 +21,38 @@ export const team: Team = {
       name: "Amirreza Dolatpour Fathkouhi",
       title: "PhD Student",
       link: "https://www.linkedin.com/in/amirreza-dolatpour-fathkouhi/"
+    },
+    {
+      name: "Tom Lever",
+      title: "Graduate Researcher",
+      link: ""
+    },
+    {
+      name: "Fokhrul Islam",
+      title: "PhD Student",
+      link: ""
+    },
+    {
+      name: "Ali Kashani",
+      title: "PostDoc Research Scientist",
+      link: ""
+    },
+    {
+      name: "Aram Vajdi",
+      title: "PostDoc Research Scientist",
+      link: ""
     }
   ],
   alumni: [
     {
       name: "Anne Talkington",
-      title: "Assistant Professor University at Buffalo",
+      title: "Tenure-track Assistant Professor (University at Buffalo)",
       link: "https://scholar.google.com/citations?user=K7NwIFQAAAAJ&hl=en&oi=ao"
+    },
+    {
+      name: "Ali Tavasoli",
+      title: "Tenure-track Assistant Professor (James Madison University)",
+      link: "https://www.linkedin.com/in/ali-tavasoli-9a45b459/"
     },
     {
       name: "Shahab Azarfar",

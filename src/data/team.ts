@@ -25,22 +25,22 @@ export const team: Team = {
     {
       name: "Tom Lever",
       title: "Graduate Researcher",
-      link: ""
+      link: "https://www.linkedin.com/in/tom-lever-12820541/"
     },
     {
       name: "Fokhrul Islam",
       title: "PhD Student",
-      link: ""
+      link: "https://www.linkedin.com/in/fokhrul-islam/"
     },
     {
       name: "Ali Kashani",
       title: "PostDoc Research Scientist",
-      link: ""
+      link: "https://www.linkedin.com/in/ali-kashani-93a99a226/"
     },
     {
       name: "Aram Vajdi",
       title: "PostDoc Research Scientist",
-      link: ""
+      link: "https://www.linkedin.com/in/aram-vajdi-1116a8218/"
     }
   ],
   alumni: [

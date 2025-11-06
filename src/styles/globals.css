@@ -3,63 +3,38 @@
 @tailwind utilities;
 
 :root {
-  --color-navy: #002862;
-  --color-accent: #ffba69;
-  --color-slate-900: #1f2933;
-  --color-slate-500: #64748b;
-  --color-slate-100: #e2e8f0;
-  --glow-warm: rgba(255, 186, 105, 0.28);
-  --glow-cool: rgba(46, 119, 209, 0.35);
+  --background: #ffffff;
+  --foreground: #1f2933;
+  --accent-navy: #002862;
+  --accent-warm: #ffba69;
+  --slate-500: #64748b;
+  --slate-100: #e2e8f0;
+  --body-gradient: linear-gradient(135deg, rgba(245, 219, 193, 0.65) 0%, rgba(237, 233, 249, 0.7) 45%, rgba(228, 236, 249, 0.85) 100%);
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-* {
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --body-gradient: #05090f;
+  }
 }
 
 body {
-  position: relative;
-  min-height: 100vh;
-  margin: 0;
-  color: var(--color-slate-900);
-  font-family: var(--font-body, "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif);
-  background: linear-gradient(135deg, rgba(245, 219, 193, 0.65) 0%, rgba(237, 233, 249, 0.7) 45%, rgba(228, 236, 249, 0.85) 100%);
-  overflow-x: hidden;
-}
-
-body::before,
-body::after {
-  content: "";
-  position: fixed;
-  pointer-events: none;
-  width: 60vw;
-  height: 60vw;
-  border-radius: 50%;
-  filter: blur(100px);
-  opacity: 0.9;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-}
-
-body::before {
-  top: 12%;
-  left: 18%;
-  background: radial-gradient(circle at center, var(--glow-warm), transparent 65%);
-}
-
-body::after {
-  top: 70%;
-  left: 78%;
-  background: radial-gradient(circle at center, var(--glow-cool), transparent 70%);
-}
-
-.dark body {
-  color: var(--color-slate-100);
-  background: radial-gradient(circle at 20% 20%, rgba(15, 32, 70, 0.78), transparent 60%), #05090f;
+  color: var(--foreground);
+  background: var(--body-gradient, var(--background));
+  background-color: var(--background);
+  font-family: var(
+    --font-body,
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif
+  );
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 h1,
@@ -68,21 +43,16 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-heading, "Space Grotesk", "Inter", system-ui, sans-serif);
+  font-family: var(
+    --font-heading,
+    "Space Grotesk",
+    "Inter",
+    system-ui,
+    sans-serif
+  );
   letter-spacing: -0.01em;
 }
 
 a {
   color: inherit;
-}
-
-[data-animate="reveal"] {
-  opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1), transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-[data-animate="reveal"].is-visible {
-  opacity: 1;
-  transform: translateY(0);
 }

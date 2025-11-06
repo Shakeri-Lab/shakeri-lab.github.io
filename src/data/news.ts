@@ -84,7 +84,7 @@ export const news: NewsItem[] = [
   {
     date: "December 20, 2024",
     title: "LaunchPad Grant Award",
-    content: "Dynamo Lab received a $200k grant from LaunchPad for Diabetes to pilot trial the use of advanced ML tools in Artificial Pancreas technology. The program supports innovative solutions for Type 1 or Type 2 diabetes treatment, focusing on translational research projects that address unmet clinical needs.",
+    content: "Shakeri Lab received a $200k grant from LaunchPad for Diabetes to pilot trial the use of advanced ML tools in Artificial Pancreas technology. The program supports innovative solutions for Type 1 or Type 2 diabetes treatment, focusing on translational research projects that address unmet clinical needs.",
     links: [{
       text: "Learn More",
       url: "https://research.virginia.edu/initiatives/translational-research/launchpad"

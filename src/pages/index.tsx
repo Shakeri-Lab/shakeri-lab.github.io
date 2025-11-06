@@ -40,13 +40,13 @@ export default function Component() {
               <CardContent className="py-6">
                 <div className="flex flex-col items-center">
                   {/* Title above logo */}
-                  <h1 className="text-2xl font-bold dark:text-white mb-4">DYNAMO Lab</h1>
+                  <h1 className="text-2xl font-bold dark:text-white mb-4">Shakeri Lab</h1>
                   
                   {/* Logo */}
                   <div className="w-[100px] mb-4">
                     <Image
                       src="/dynamo-lab-logo.png"
-                      alt="DYNAMO Lab Logo"
+                      alt="Shakeri Lab Logo"
                       width={100}
                       height={100}
                       className="h-auto w-full"
@@ -186,7 +186,7 @@ export default function Component() {
                   width="100%" 
                   height="100%" 
                   src="https://www.youtube.com/embed/6c3mOsUm3cI" 
-                  title="DYNAMO Lab Video"
+                  title="Shakeri Lab Video"
                   frameBorder="0" 
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                   allowFullScreen
@@ -216,7 +216,7 @@ export default function Component() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-sm dark:text-gray-300">
-                  At DYNAMO Lab, we develop intelligent algorithms to control and understand complex dynamical systems in biomedical applications. 
+                  At Shakeri Lab, we develop intelligent algorithms to control and understand complex dynamical systems in biomedical applications. 
                   Our interdisciplinary approach bridges machine learning, control theory, and data science to tackle challenges ranging from cellular dynamics to human health.
                 </p>
                 <p className="text-sm dark:text-gray-300">

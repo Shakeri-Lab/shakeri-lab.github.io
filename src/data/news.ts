@@ -21,6 +21,18 @@ export const news: NewsItem[] = [
   },
   {
     date: "October 2025",
+    title: "Invited Speaker at SIAM Central States Section Meeting",
+    content: "Dr. Shakeri will present \"Operator-Theoretic Meal Detection: Windowed DMD, Stability Cues, and Translation to Closed-Loop Care\" within the mini-symposium \"Interactions among analysis, optimization and network science\" at the 10th Annual Meeting of the SIAM Central States Section.",
+    links: [{
+      text: "Conference Website",
+      url: "https://siam-uark.github.io/UARK-SIAM-CSS-25/#/"
+    }, {
+      text: "Talk Abstract",
+      url: "https://siam-uark.github.io/UARK-SIAM-CSS-25/#/talk/operator-theoretic-meal-detection-windowed-dmd-stability-cues-and-translation-to-closed-loop-care?ms=interactions-among-analysis-optimization-and-network-science"
+    }]
+  },
+  {
+    date: "October 2025",
     title: "Paper Published in Applied Soft Computing",
     content: "Our paper 'Graph-embedded reinforcement learning for dynamic pricing and advertising under network effects' has been published in Applied Soft Computing.",
     links: [{

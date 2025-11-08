@@ -1,6 +1,33 @@
 import { NewsItem } from '@/types';
 
 export const news: NewsItem[] = [
+  {
+    date: "November 2025",
+    title: "Paper Accepted for Oral Presentation",
+    content: "Our paper 'Anomaly detection in brain MRI: a neural discrete representation learning with contrastive loss' has been accepted for oral presentation at the SPIE Medical Imaging Meeting (15-19 February 2026).",
+    links: [{
+      text: "SPIE Medical Imaging",
+      url: "https://spie.org/MI"
+    }]
+  },
+  {
+    date: "November 2025",
+    title: "Dr. Shakeri Joins NDIF External Scientific Advisory Board",
+    content: "Dr. Shakeri has joined the National Deep Inference Fabric (NDIF) External Scientific Advisory Board, supporting efforts to advance AI interpretability, interdisciplinary research, and responsible technology development.",
+    links: [{
+      text: "About NDIF",
+      url: "https://ndif.us/about.html"
+    }]
+  },
+  {
+    date: "October 2025",
+    title: "Paper Published in Applied Soft Computing",
+    content: "Our paper 'Graph-embedded reinforcement learning for dynamic pricing and advertising under network effects' has been published in Applied Soft Computing.",
+    links: [{
+      text: "Read Paper",
+      url: "https://www.sciencedirect.com/science/article/pii/S1568494625013699"
+    }]
+  },
   // 2025
   {
     date: "July 2025",

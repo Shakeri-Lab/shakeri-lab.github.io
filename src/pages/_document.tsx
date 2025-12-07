@@ -38,7 +38,7 @@ export default function Document() {
         <link rel="canonical" href="https://shakeri-lab.github.io/" />
 
         {/* Favicon */}
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" href="/dynamo-lab-logo.png" />
         <link rel="apple-touch-icon" href="/dynamo-lab-logo.png" />
 
         {/* Theme Color */}

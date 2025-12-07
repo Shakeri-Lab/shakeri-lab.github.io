@@ -4,7 +4,6 @@ import {
   HeaderCard,
   TeamCard,
   VideoCard,
-  JoinCard,
   ResearchCard,
   ProjectsCard,
   NewsCard,
@@ -54,7 +53,6 @@ export default function Home() {
               <HeaderCard theme={theme} onToggleTheme={toggleTheme} />
               <TeamCard />
               <VideoCard />
-              <JoinCard />
             </div>
 
             {/* Middle Column */}

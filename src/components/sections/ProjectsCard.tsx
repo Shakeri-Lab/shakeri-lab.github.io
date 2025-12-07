@@ -33,14 +33,6 @@ const projects = [
       </>
     ),
   },
-  {
-    title: "We're Looking For Builders Who Bridge Theory & Practice",
-    description: (
-      <>
-        The Architect: adapts Transformers, Attention, and LLM ideas to time-series and knows why they work. The Theorist: brings dynamical systems, control, or operator theory to clinical data. The Modeler: uses generative AI or epidemiological modeling to simulate complex, interdependent processes that inform public health and patient care.
-      </>
-    ),
-  },
 ];
 
 export function ProjectsCard() {
@@ -50,12 +42,29 @@ export function ProjectsCard() {
         <CardTitle className="dark:text-white">Current Projects</CardTitle>
       </CardHeader>
       <CardContent className="space-y-8">
-        {projects.map((project, index) => (
-          <div key={index}>
-            <h3 className="font-semibold mb-2 text-zinc-700 dark:text-zinc-300">{project.title}</h3>
-            <p className="text-sm dark:text-gray-300">{project.description}</p>
+        <div className="space-y-8">
+          {projects.map((project, index) => (
+            <div key={index}>
+              <h3 className="font-semibold mb-2 text-zinc-700 dark:text-zinc-300">{project.title}</h3>
+              <p className="text-sm dark:text-gray-300">{project.description}</p>
+            </div>
+          ))}
+        </div>
+
+        <div className="border-t border-gray-200 pt-6 dark:border-gray-700 space-y-4">
+          <h3 className="font-semibold text-zinc-700 dark:text-zinc-200">Join Our Team</h3>
+          <p className="text-sm dark:text-gray-300">
+            We are recruiting PhD students and postdocs who are excited to bridge hard mathematics with applied clinical impact.
+          </p>
+          <div className="space-y-2 text-sm dark:text-gray-300">
+            <p><strong>The Architect</strong>: adapts Transformers, Attention, and LLM ideas to time-series and understands why they work.</p>
+            <p><strong>The Theorist</strong>: brings dynamical systems, control, or operator theory to clinical data.</p>
+            <p><strong>The Modeler</strong>: uses generative AI or epidemiological modeling to simulate complex, interdependent processes that inform public health and patient care.</p>
           </div>
-        ))}
+          <p className="text-sm dark:text-gray-300">
+            If you want to pair rigorous theory with real-world deployment, we&apos;d love to hear from you.
+          </p>
+        </div>
       </CardContent>
     </Card>
   );

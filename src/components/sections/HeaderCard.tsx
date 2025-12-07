@@ -15,12 +15,12 @@ export function HeaderCard({ theme, onToggleTheme }: HeaderCardProps) {
         <div className="flex flex-col items-center">
           <h1 className="text-2xl font-bold dark:text-white mb-4">Shakeri Lab</h1>
 
-          <div className="w-[100px] mb-4">
+          <div className="w-[72px] mb-3">
             <Image
               src="/dynamo-lab-logo.png"
               alt="Shakeri Lab Logo"
-              width={100}
-              height={100}
+              width={72}
+              height={72}
               className="h-auto w-full"
               priority
             />

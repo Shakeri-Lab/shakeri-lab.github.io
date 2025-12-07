@@ -8,12 +8,10 @@ export function ResearchCard() {
       </CardHeader>
       <CardContent className="space-y-4">
         <p className="text-sm dark:text-gray-300">
-          At Shakeri Lab, we develop intelligent algorithms to control and understand complex dynamical systems in biomedical applications.
-          Our interdisciplinary approach bridges machine learning, control theory, and data science to tackle challenges ranging from cellular dynamics to human health.
+          We don&apos;t just model data&mdash;we close the loop. Operating between the UVA School of Data Science and the Center for Diabetes Technology, we span the full spectrum from proving theorems on whiteboards to deploying algorithms in FDA-regulated clinical trials.
         </p>
         <p className="text-sm dark:text-gray-300">
-          While our primary focus is on biomedical applications, we also explore intelligent control and data analysis techniques in areas like traffic optimization
-          and change-point detection in temporal multispectral images. These projects showcase the versatility of our methods and their applicability to various complex systems.
+          We reject black-box health AI. Our systems are grounded in the geometric and spectral structure of the underlying dynamics, moving ideas from fundamental operator theory through in silico generative modeling to closed-loop clinical translation.
         </p>
       </CardContent>
     </Card>

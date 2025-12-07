@@ -27,7 +27,7 @@ export function HeaderCard({ theme, onToggleTheme }: HeaderCardProps) {
           </div>
 
           <p className="text-sm text-gray-600 dark:text-gray-300 text-center mb-6 max-w-md">
-            Advancing Machine Intelligence for Dynamical Systems and Control in Biomedical Applications
+            <strong>Principled Mathematics. Rigorous AI. Clinical Reality.</strong> Bridging dynamical systems theory and the artificial pancreas to transform human health.
           </p>
 
           <div className="flex justify-center items-center gap-6 pt-2">

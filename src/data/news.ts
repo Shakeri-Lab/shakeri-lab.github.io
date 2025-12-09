@@ -2,6 +2,30 @@ import { NewsItem } from '@/types';
 
 export const news: NewsItem[] = [
   {
+    date: "November 30, 2025",
+    title: "Preprint: Fast Algorithm for Minimum Weight Cycles",
+    content: "We released the preprint 'A Fast Algorithm for Finding Minimum Weight Cycles in Mining Cyclic Graph Topologies,' introducing a deterministic Dijkstra-inspired method with pruning heuristics to accelerate minimum weight cycle search and loop modulus computations.",
+    links: [{
+      text: "Read on arXiv",
+      url: "https://arxiv.org/abs/2512.01049"
+    }, {
+      text: "Code: girth",
+      url: "https://github.com/Shakeri-Lab/girth"
+    }, {
+      text: "Code: loop modulus",
+      url: "https://github.com/Shakeri-Lab/loop-modulus"
+    }]
+  },
+  {
+    date: "November 25, 2025",
+    title: "Preprint: Driver-Blindness in Blood Glucose Forecasting",
+    content: "Dr. Shakeri's preprint 'The Driver-Blindness Phenomenon: Why Deep Sequence Models Default to Autocorrelation in Blood Glucose Forecasting' formalizes why deep models often ignore insulin, meals, and activity drivers, proposing mitigation strategies and calling for routine Δdrivers reporting.",
+    links: [{
+      text: "Read on arXiv",
+      url: "https://arxiv.org/abs/2511.20601"
+    }]
+  },
+  {
     date: "November 2025",
     title: "Paper Accepted for Oral Presentation",
     content: "Our paper 'Anomaly detection in brain MRI: a neural discrete representation learning with contrastive loss' has been accepted for oral presentation at the SPIE Medical Imaging Meeting (15-19 February 2026).",

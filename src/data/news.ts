@@ -8,6 +8,11 @@ export const news: NewsItem[] = [
   },
   {
     date: "December 2025",
+    title: "SDS Center Grant Development Funding",
+    content: "The School of Data Science awarded Dr. Shakeri $55,000 in 2025 SDS Center Grant Development funding for the project “Center Grant Development for NIH P30 Diabetes Research Center Resubmission.”"
+  },
+  {
+    date: "December 2025",
     title: "Funding for Home-Based CGM Screening Test",
     content: "We received $100,000 to build a home-based CGM screening test for early detection of Type 1 diabetes progression. Dr. Shakeri will co-PI with Leon S. Farhi and Mark DeBoer to develop algorithms, engage FDA pre-submission, and initiate industry partnerships with CGM manufacturers to identify candidates for disease-modifying therapies like Teplizumab before clinical diagnosis."
   },

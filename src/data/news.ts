@@ -2,6 +2,16 @@ import { NewsItem } from '@/types';
 
 export const news: NewsItem[] = [
   {
+    date: "December 2025",
+    title: "LaunchPad Funding for Diabetes Foundation Model",
+    content: "We received $200,000 in LaunchPad funding to develop the first foundation model for Type 1 and Type 2 diabetes. Dr. Shakeri will co-PI with Boris Kovatchev and Sue Brown; the work will unify databases, pretrain, and validate on FDA-accepted simulators, targeting clinical translation within 12–18 months for initial applications."
+  },
+  {
+    date: "December 2025",
+    title: "Funding for Home-Based CGM Screening Test",
+    content: "We received $100,000 to build a home-based CGM screening test for early detection of Type 1 diabetes progression. Dr. Shakeri will co-PI with Leon S. Farhi and Mark DeBoer to develop algorithms, engage FDA pre-submission, and initiate industry partnerships with CGM manufacturers to identify candidates for disease-modifying therapies like Teplizumab before clinical diagnosis."
+  },
+  {
     date: "November 30, 2025",
     title: "Preprint: Fast Algorithm for Minimum Weight Cycles",
     content: "We released the preprint 'A Fast Algorithm for Finding Minimum Weight Cycles in Mining Cyclic Graph Topologies,' introducing a deterministic Dijkstra-inspired method with pruning heuristics to accelerate minimum weight cycle search and loop modulus computations.",

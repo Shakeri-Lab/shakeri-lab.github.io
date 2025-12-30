@@ -3,6 +3,20 @@ import { NewsItem } from '@/types';
 export const news: NewsItem[] = [
   {
     date: "December 2025",
+    title: "$4.7 million support to Forlenza–Shakeri Project for Next-Gen Diabetes Tech",
+    content: "We are thrilled to announce that Breakthrough T1D and the Helmsley Charitable Trust have awarded a $3.9 million grant to the Forlenza–Shakeri project, a multi-center initiative co-led by Dr. Shakeri as Contact PI alongside Dr. Greg Forlenza (CU Anschutz). UVA will lead algorithm development and engineering work packages, operating alongside clinical sites at UVA, CU (Barbara Davis Center), and UCSF to advance next-generation automated insulin delivery systems. The initiative is bolstered by $800,000 in in-kind contributions from Tandem Diabetes Care and Arecor, bringing total support to nearly $4.7 million."
+  },
+  {
+    date: "December 10, 2025",
+    title: "Preprint: Mitigating Exposure Bias in Risk-Aware Time Series Forecasting with Soft Tokens",
+    content: "Autoregressive forecasting in diabetes and hemodynamic management can suffer from exposure bias under teacher forcing, yielding unstable multi-step predictions. We introduce Soft-Token Trajectory Forecasting (SoTra), which propagates continuous probability distributions (\"soft tokens\") to learn calibrated, uncertainty-aware trajectories, plus a risk-aware decoding module that minimizes expected clinical harm. SoTra reduces zone-based glucose risk by 18% and lowers blood-pressure clinical risk by about 15%, supporting safety-critical predictive control.",
+    links: [{
+      text: "Read on arXiv",
+      url: "https://arxiv.org/abs/2512.10056"
+    }]
+  },
+  {
+    date: "December 2025",
     title: "LaunchPad Funding for Diabetes Foundation Model",
     content: "We received $200,000 in LaunchPad funding to develop the first foundation model for Type 1 and Type 2 diabetes. Dr. Shakeri will co-PI with Boris Kovatchev and Sue Brown; the work will unify databases, pretrain, and validate on FDA-accepted simulators, targeting clinical translation within 12–18 months for initial applications."
   },
@@ -38,6 +52,15 @@ export const news: NewsItem[] = [
     links: [{
       text: "Read on arXiv",
       url: "https://arxiv.org/abs/2511.20601"
+    }]
+  },
+  {
+    date: "November 2025",
+    title: "Preprint: Fusing Biomechanical and Spatio-Temporal Features for Fall Prediction",
+    content: "Vision-based fall prediction is constrained by scarce fall data. We propose the Biomechanical Spatio-Temporal Graph Convolutional Network (BioST-GCN), a dual-stream model that fuses pose and biomechanical signals via cross-attention. BioST-GCN improves F1 by 5.32% on MCF-UA and 2.91% on MUVIM over ST-GCN, and the attention mechanisms highlight critical joints and temporal phases, while a simulation-to-reality gap remains.",
+    links: [{
+      text: "Read on arXiv",
+      url: "https://arxiv.org/abs/2511.14620"
     }]
   },
   {

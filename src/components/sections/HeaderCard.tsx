@@ -9,31 +9,34 @@ interface HeaderCardProps {
 }
 
 export function HeaderCard({ theme, onToggleTheme }: HeaderCardProps) {
+  const iconClassName =
+    "rounded-sm text-[var(--muted)] transition-colors hover:text-[var(--link)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--surface-elevated)]";
+
   return (
-    <Card className="dark:bg-gray-800 dark:border-gray-700">
+    <Card className="bg-[var(--surface-elevated)]">
       <CardContent className="py-6">
         <div className="flex flex-col items-center">
-          <h1 className="text-2xl font-bold dark:text-white mb-4">Shakeri Lab</h1>
+          <h1 className="mb-4 text-2xl font-bold tracking-tight">Shakeri Lab</h1>
 
-          <div className="w-[72px] mb-3">
+          <div className="mb-4 w-[96px] rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-1.5">
             <Image
-              src="/dynamo-lab-logo.png"
+              src="/logo-square.jpeg"
               alt="Shakeri Lab Logo"
-              width={72}
-              height={72}
-              className="h-auto w-full"
+              width={88}
+              height={88}
+              className="h-[88px] w-[88px] rounded-xl object-cover"
               priority
             />
           </div>
 
-          <p className="text-sm text-gray-600 dark:text-gray-300 text-center mb-6 max-w-md">
+          <p className="mb-6 max-w-md text-center text-sm text-[var(--muted)]">
             <strong>Principled Mathematics. Rigorous AI. Clinical Reality.</strong> Bridging dynamical systems theory and the artificial pancreas to transform human health.
           </p>
 
-          <div className="flex justify-center items-center gap-6 pt-2">
+          <div className="flex items-center justify-center gap-6 pt-2">
             <Link
               href="mailto:hs9hd@virginia.edu"
-              className="hover:text-primary transition-colors"
+              className={iconClassName}
               title="hs9hd at virginia dot edu"
             >
               <Mail className="h-5 w-5" />
@@ -41,7 +44,7 @@ export function HeaderCard({ theme, onToggleTheme }: HeaderCardProps) {
             </Link>
             <Link
               href="https://www.google.com/maps/place/1919+Ivy+Rd,+Charlottesville,+VA+22903"
-              className="hover:text-primary transition-colors"
+              className={iconClassName}
               target="_blank"
               rel="noopener noreferrer"
               title="1919 Ivy Rd, Charlottesville, VA 22903"
@@ -51,7 +54,7 @@ export function HeaderCard({ theme, onToggleTheme }: HeaderCardProps) {
             </Link>
             <Link
               href="https://shakeri-lab.github.io/dl-course-site/"
-              className="hover:text-primary transition-colors"
+              className={iconClassName}
               target="_blank"
               rel="noopener noreferrer"
               title="Deep Learning Course Website"
@@ -61,7 +64,7 @@ export function HeaderCard({ theme, onToggleTheme }: HeaderCardProps) {
             </Link>
             <Link
               href="https://scholar.google.com/citations?user=zFIIhGMAAAAJ&hl=en&oi=ao"
-              className="hover:text-primary transition-colors"
+              className={iconClassName}
               target="_blank"
               rel="noopener noreferrer"
               title="Google Scholar Profile"
@@ -71,7 +74,7 @@ export function HeaderCard({ theme, onToggleTheme }: HeaderCardProps) {
             </Link>
             <Link
               href="https://github.com/Shakeri-Lab"
-              className="hover:text-primary transition-colors"
+              className={iconClassName}
               target="_blank"
               rel="noopener noreferrer"
               title="GitHub Organization"
@@ -81,12 +84,12 @@ export function HeaderCard({ theme, onToggleTheme }: HeaderCardProps) {
             </Link>
             <button
               onClick={onToggleTheme}
-              className="p-1 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-gray-800"
+              className="rounded-md p-1.5 text-[var(--muted)] transition-colors hover:bg-white/10 hover:text-[var(--link)] focus:outline-none focus:ring-2 focus:ring-[var(--focus-ring)] focus:ring-offset-2 focus:ring-offset-[var(--surface-elevated)]"
               aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
             >
               {theme === "dark" ?
-                <Sun className="h-5 w-5 text-yellow-500" /> :
-                <Moon className="h-5 w-5 text-gray-500" />
+                <Sun className="h-5 w-5 text-amber-400" /> :
+                <Moon className="h-5 w-5 text-[var(--muted)]" />
               }
             </button>
           </div>

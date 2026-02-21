@@ -4,17 +4,17 @@ import { team } from "@/data/team";
 
 export function TeamCard() {
   return (
-    <Card className="dark:bg-gray-800 dark:border-gray-700">
+    <Card>
       <CardHeader>
-        <CardTitle className="text-base dark:text-white">Team</CardTitle>
+        <CardTitle className="text-base">Team</CardTitle>
       </CardHeader>
       <CardContent>
         <div className="space-y-4">
           <div>
-            <h3 className="font-semibold text-sm text-zinc-700 dark:text-zinc-300">Principal Investigator</h3>
+            <h3 className="text-sm font-semibold text-[var(--muted-strong)]">Principal Investigator</h3>
             <Link
               href={team.pi.link}
-              className="text-sm text-primary hover:underline"
+              className="text-sm text-[var(--link)] hover:underline"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -22,14 +22,14 @@ export function TeamCard() {
             </Link>
           </div>
           <div>
-            <h3 className="font-semibold text-sm text-zinc-700 dark:text-zinc-300">Current Members</h3>
+            <h3 className="text-sm font-semibold text-[var(--muted-strong)]">Current Members</h3>
             <ul className="space-y-2">
               {team.currentMembers.map((member, index) => (
-                <li key={index} className="text-sm dark:text-gray-300">
+                <li key={index} className="text-sm text-[var(--muted)]">
                   {member.link ? (
                     <Link
                       href={member.link}
-                      className="text-primary hover:underline"
+                      className="text-[var(--link)] hover:underline"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -43,14 +43,14 @@ export function TeamCard() {
             </ul>
           </div>
           <div>
-            <h3 className="font-semibold text-sm text-zinc-700 dark:text-zinc-300">Alumni</h3>
+            <h3 className="text-sm font-semibold text-[var(--muted-strong)]">Alumni</h3>
             <ul className="space-y-2">
               {team.alumni.map((member, index) => (
-                <li key={index} className="text-sm dark:text-gray-300">
+                <li key={index} className="text-sm text-[var(--muted)]">
                   {member.link ? (
                     <Link
                       href={member.link}
-                      className="text-primary hover:underline"
+                      className="text-[var(--link)] hover:underline"
                       target="_blank"
                       rel="noopener noreferrer"
                     >

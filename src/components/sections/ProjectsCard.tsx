@@ -37,31 +37,31 @@ const projects = [
 
 export function ProjectsCard() {
   return (
-    <Card className="dark:bg-gray-800 dark:border-gray-700">
+    <Card>
       <CardHeader>
-        <CardTitle className="dark:text-white">Current Projects</CardTitle>
+        <CardTitle>Current Projects</CardTitle>
       </CardHeader>
       <CardContent className="space-y-8">
         <div className="space-y-8">
           {projects.map((project, index) => (
             <div key={index}>
-              <h3 className="font-semibold mb-2 text-zinc-700 dark:text-zinc-300">{project.title}</h3>
-              <p className="text-sm dark:text-gray-300">{project.description}</p>
+              <h3 className="mb-2 font-semibold text-[var(--muted-strong)]">{project.title}</h3>
+              <p className="text-sm leading-relaxed text-[var(--muted)]">{project.description}</p>
             </div>
           ))}
         </div>
 
-        <div className="border-t border-gray-200 pt-6 dark:border-gray-700 space-y-4">
-          <h3 className="font-semibold text-zinc-700 dark:text-zinc-200">Join Our Team</h3>
-          <p className="text-sm dark:text-gray-300">
+        <div className="space-y-4 border-t border-[var(--border)] pt-6">
+          <h3 className="font-semibold text-[var(--muted-strong)]">Join Our Team</h3>
+          <p className="text-sm text-[var(--muted)]">
             We are recruiting PhD students and postdocs who are excited to bridge hard mathematics with applied clinical impact.
           </p>
-          <div className="space-y-2 text-sm dark:text-gray-300">
+          <div className="space-y-2 text-sm text-[var(--muted)]">
             <p><strong>The Architect</strong>: adapts Transformers, Attention, and LLM ideas to time-series and understands why they work.</p>
             <p><strong>The Theorist</strong>: brings dynamical systems, control, or operator theory to clinical data.</p>
             <p><strong>The Modeler</strong>: uses generative AI or epidemiological modeling to simulate complex, interdependent processes that inform public health and patient care.</p>
           </div>
-          <p className="text-sm dark:text-gray-300">
+          <p className="text-sm text-[var(--muted)]">
             If you want to pair rigorous theory with real-world deployment, we&apos;d love to hear from you.
           </p>
         </div>

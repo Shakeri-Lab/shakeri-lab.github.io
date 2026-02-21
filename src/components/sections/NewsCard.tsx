@@ -5,9 +5,9 @@ import { news } from "@/data/news";
 
 export function NewsCard() {
   return (
-    <Card className="dark:bg-gray-800 dark:border-gray-700">
+    <Card>
       <CardHeader>
-        <CardTitle className="text-base dark:text-white">News</CardTitle>
+        <CardTitle className="text-base">News</CardTitle>
       </CardHeader>
       <CardContent className="relative">
         <div className="h-[1350px] overflow-y-auto pr-2 space-y-4 scrollbar-thin">
@@ -17,18 +17,18 @@ export function NewsCard() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3, delay: index * 0.1 }}
-              className="pb-4 border-b border-gray-100 dark:border-gray-700 last:border-0"
+              className="border-b border-[var(--border)] pb-4 last:border-0"
             >
-              <p className="text-xs text-muted-foreground dark:text-gray-400">{item.date}</p>
-              <h3 className="text-sm font-semibold dark:text-white">{item.title}</h3>
-              <p className="text-sm dark:text-gray-300">{item.content}</p>
+              <p className="text-xs text-[var(--muted)] opacity-80">{item.date}</p>
+              <h3 className="text-sm font-semibold text-[var(--muted-strong)]">{item.title}</h3>
+              <p className="text-sm text-[var(--muted)]">{item.content}</p>
               {item.links && item.links.length > 0 && (
                 <div className="mt-2 space-x-4">
                   {item.links.map((link, linkIndex) => (
                     <Link
                       key={linkIndex}
                       href={link.url}
-                      className="text-sm text-primary hover:underline inline-flex items-center gap-1"
+                      className="inline-flex items-center gap-1 text-sm text-[var(--link)] hover:underline"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -42,11 +42,11 @@ export function NewsCard() {
         </div>
 
         {/* Scroll indicator */}
-        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white dark:from-gray-800 to-transparent pointer-events-none flex items-end justify-center pb-2">
+        <div className="pointer-events-none absolute bottom-0 left-0 right-0 flex h-16 items-end justify-center bg-gradient-to-t from-[var(--surface)] to-transparent pb-2">
           <motion.div
             animate={{ y: [0, 5, 0] }}
             transition={{ duration: 2, repeat: Infinity }}
-            className="text-gray-400 text-sm flex items-center gap-1"
+            className="flex items-center gap-1 text-sm text-[var(--muted)]"
           >
             Scroll for more
             <svg

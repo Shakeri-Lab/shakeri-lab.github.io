@@ -2,8 +2,8 @@ import * as React from "react"
 
 export function Card({ className, ...props }: 
 React.HTMLAttributes<HTMLDivElement>) {
-  return <div className={`rounded-lg border bg-card text-card-foreground 
-shadow-sm ${className}`} {...props} />
+  return <div className={`rounded-xl border border-[var(--border)] bg-[var(--surface)] text-foreground 
+shadow-[var(--card-shadow)] backdrop-blur-[2px] transition-colors ${className ?? ""}`} {...props} />
 }
 
 export function CardHeader({ className, ...props }: 

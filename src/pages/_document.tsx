@@ -21,7 +21,7 @@ export default function Document() {
           property="og:description"
           content="Shakeri Lab at University of Virginia specializes in machine learning, control systems, and dynamical systems for biomedical applications."
         />
-        <meta property="og:image" content="https://shakeri-lab.github.io/dynamo-lab-logo.png" />
+        <meta property="og:image" content="https://shakeri-lab.github.io/logo-square.jpeg" />
         <meta property="og:site_name" content="Shakeri Lab" />
 
         {/* Twitter */}
@@ -32,17 +32,18 @@ export default function Document() {
           property="twitter:description"
           content="Shakeri Lab at University of Virginia specializes in machine learning, control systems, and dynamical systems for biomedical applications."
         />
-        <meta property="twitter:image" content="https://shakeri-lab.github.io/dynamo-lab-logo.png" />
+        <meta property="twitter:image" content="https://shakeri-lab.github.io/logo-square.jpeg" />
 
         {/* Canonical URL */}
         <link rel="canonical" href="https://shakeri-lab.github.io/" />
 
         {/* Favicon */}
-        <link rel="icon" type="image/png" href="/dynamo-lab-logo.png" />
-        <link rel="apple-touch-icon" href="/dynamo-lab-logo.png" />
+        <link rel="icon" type="image/png" href="/logo-square.png" />
+        <link rel="apple-touch-icon" href="/logo-square.png" />
 
         {/* Theme Color */}
-        <meta name="theme-color" content="#002862" />
+        <meta name="theme-color" media="(prefers-color-scheme: light)" content="#edf4ff" />
+        <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#050d1d" />
       </Head>
       <body className="antialiased">
         <Main />

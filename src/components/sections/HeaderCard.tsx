@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
-import { Github, GraduationCap, Mail, MapPin, Moon, Sun, Book } from "lucide-react";
+import { ArrowUpRight, Book, Github, GraduationCap, Mail, MapPin, Moon, Sun } from "lucide-react";
 
 interface HeaderCardProps {
   theme: string;
@@ -11,6 +11,8 @@ interface HeaderCardProps {
 export function HeaderCard({ theme, onToggleTheme }: HeaderCardProps) {
   const iconClassName =
     "rounded-sm text-[var(--muted)] transition-colors hover:text-[var(--link)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--surface-elevated)]";
+  const courseLinkClassName =
+    "mb-5 inline-flex items-center gap-2 rounded-full border border-[var(--link)] bg-[var(--surface)] px-4 py-2 text-sm font-semibold text-[var(--link)] transition-colors hover:bg-[var(--link)] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--surface-elevated)]";
 
   return (
     <Card className="bg-[var(--surface-elevated)]">
@@ -33,7 +35,22 @@ export function HeaderCard({ theme, onToggleTheme }: HeaderCardProps) {
             <strong>Principled Mathematics. Rigorous AI. Clinical Reality.</strong> Bridging dynamical systems theory and the artificial pancreas to transform human health.
           </p>
 
-          <div className="flex items-center justify-center gap-6 pt-2">
+          <Link
+            href="https://shakeri-lab.github.io/dl-course-site/"
+            className={courseLinkClassName}
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Deep Learning Course Website"
+          >
+            <Book className="h-4 w-4" />
+            <span>Deep Learning Course</span>
+            <span className="rounded-full bg-[var(--link)] px-2 py-0.5 text-[10px] font-bold uppercase tracking-[0.08em] text-white">
+              Featured
+            </span>
+            <ArrowUpRight className="h-3.5 w-3.5" />
+          </Link>
+
+          <div className="flex flex-wrap items-center justify-center gap-6 pt-1">
             <Link
               href="mailto:hs9hd@virginia.edu"
               className={iconClassName}
@@ -51,16 +68,6 @@ export function HeaderCard({ theme, onToggleTheme }: HeaderCardProps) {
             >
               <MapPin className="h-5 w-5" />
               <span className="sr-only">Location</span>
-            </Link>
-            <Link
-              href="https://shakeri-lab.github.io/dl-course-site/"
-              className={iconClassName}
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Deep Learning Course Website"
-            >
-              <Book className="h-5 w-5" />
-              <span className="sr-only">Deep Learning Course</span>
             </Link>
             <Link
               href="https://scholar.google.com/citations?user=zFIIhGMAAAAJ&hl=en&oi=ao"

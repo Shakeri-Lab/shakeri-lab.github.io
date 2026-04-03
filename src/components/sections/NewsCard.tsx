@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { motion } from "framer-motion";
@@ -22,6 +23,17 @@ export function NewsCard() {
               <p className="text-xs text-[var(--muted)] opacity-80">{item.date}</p>
               <h3 className="text-sm font-semibold text-[var(--muted-strong)]">{item.title}</h3>
               <p className="text-sm text-[var(--muted)]">{item.content}</p>
+              {item.image && (
+                <div className="mt-3 overflow-hidden rounded-lg border border-[var(--border)] bg-[var(--surface-elevated)] p-2">
+                  <Image
+                    src={item.image.src}
+                    alt={item.image.alt}
+                    width={item.image.width}
+                    height={item.image.height}
+                    className="mx-auto h-auto max-h-[360px] w-auto max-w-full rounded-md object-contain"
+                  />
+                </div>
+              )}
               {item.links && item.links.length > 0 && (
                 <div className="mt-2 space-x-4">
                   {item.links.map((link, linkIndex) => (

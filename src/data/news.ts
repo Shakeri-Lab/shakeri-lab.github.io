@@ -2,6 +2,38 @@ import { NewsItem } from '@/types';
 
 export const news: NewsItem[] = [
   {
+    date: "March 16, 2026",
+    title: "Healio Features UVA Research on Expediting Insulin Titration with AID in Type 2 Diabetes",
+    content: "Healio featured our recent pilot study presented at ATTD 2026 in Barcelona on using short-term automated insulin delivery to accelerate basal insulin titration in adults with type 2 diabetes. Led by colleagues at the UVA Center for Diabetes Technology, the randomized trial showed that 10 days of Control-IQ-guided titration improved time in range from 55% at baseline to 67.3%, with benefits comparable to daily physician-guided dose adjustments. The result suggests AID can identify effective basal doses in days rather than the 16 to 18 weeks often required in standard care.",
+    links: [{
+      text: "Read in Healio",
+      url: "https://www.healio.com/news/endocrinology/20260316/automated-insulin-delivery-may-expedite-basal-insulin-dose-titration-in-type-2-diabetes"
+    }]
+  },
+  {
+    date: "March 12, 2026",
+    title: "Dr. Shakeri Delivers Plenary Talk at ATTD 2026",
+    content: "Dr. Shakeri delivered a plenary lecture at ATTD 2026 in Barcelona during the Scientific Plenary Session, 'Transforming Diabetes Management with Artificial Intelligence (AI).' His talk, 'A Week of Automated Insulin Delivery Used to Titrate Basal Insulin in Type 2 Diabetes,' presented the AID-BIT pilot study, which evaluates whether about one week of outpatient AID can safely and efficiently personalize basal insulin dosing for adults with type 2 diabetes while reducing therapeutic inertia, patient burden, and clinician workload.",
+    image: {
+      src: "/news/attd-2026-plenary.jpg",
+      alt: "Dr. Heman Shakeri delivering a plenary talk at ATTD 2026 in Barcelona",
+      width: 900,
+      height: 1600
+    }
+  },
+  {
+    date: "February 18, 2026",
+    title: "Driver-Blindness Paper Featured in Dan Heller's AID Analysis",
+    content: "Our 2025 paper, 'The Driver-Blindness Phenomenon: Why Deep Sequence Models Default to Autocorrelation in Blood Glucose Forecasting,' was highlighted in Dan Heller's in-depth essay on why automated insulin delivery algorithms have seen limited gains in time in range over the past decade. The piece uses our findings to illustrate a core limitation of population-level glucose forecasting: even deep sequence models often fail to extract meaningful predictive value from clinically important drivers such as insulin, meals, and activity. This recognition reinforces the need for machine learning frameworks that capture patient-specific physiological variability rather than relying on generic population models.",
+    links: [{
+      text: "Read the analysis",
+      url: "https://danheller.substack.com/p/why-aid-algorithms-dont-improve"
+    }, {
+      text: "Read the paper",
+      url: "https://arxiv.org/abs/2511.20601"
+    }]
+  },
+  {
     date: "December 2025",
     title: "$4.7 million support to Forlenza–Shakeri Project for Next-Gen Diabetes Tech",
     content: "We are thrilled to announce that Breakthrough T1D and the Helmsley Charitable Trust have awarded a $3.9 million grant to the Forlenza–Shakeri project, a multi-center initiative co-led by Dr. Shakeri as Contact PI alongside Dr. Greg Forlenza (CU Anschutz). UVA will lead algorithm development and engineering work packages, operating alongside clinical sites at UVA, CU (Barbara Davis Center), and UCSF to advance next-generation automated insulin delivery systems. The initiative is bolstered by $800,000 in in-kind contributions from Tandem Diabetes Care and Arecor, bringing total support to nearly $4.7 million."

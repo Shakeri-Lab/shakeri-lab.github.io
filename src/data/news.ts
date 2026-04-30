@@ -2,6 +2,36 @@ import { NewsItem } from '@/types';
 
 export const news: NewsItem[] = [
   {
+    date: "April 30, 2026",
+    title: "ICML 2026 Spotlight Position Paper on Single-Cell Perturbation Analysis",
+    content: "Our position paper, 'Position: Temporal Measurement Interval Determines Computational and Model Complexity in Single-Cell Perturbation Analysis,' has been accepted as a spotlight position track paper at ICML 2026. The paper argues that the measurement time gap is the key experimental knob governing both the computational tractability of coupling unpaired single-cell populations and the effective model complexity required for perturbation prediction. It identifies a critical regime change: short measurement intervals can make matching tractable and reduce the task to supervised learning, while longer intervals can make matching NP-hard in the worst case.",
+    links: [{
+      text: "Read on OpenReview",
+      url: "https://openreview.net/forum?id=lECKpTE1lW&nesting=2&sort=date-desc"
+    }]
+  },
+  {
+    date: "April 30, 2026",
+    title: "ICML 2026 Regular Paper on Distributional RL for Non-Markovian Spreading Processes",
+    content: "Dr. Shakeri's solo-authored paper, 'Closing the Sim-to-Real Gap in Non-Markovian Spreading Processes via GPU-Accelerated Distributional RL,' has been accepted as a regular paper at ICML 2026. The work studies control of realistic stochastic spreading processes on networks and traces the sim-to-real gap to optimism bias, hub blindness, and the bimodal nature of cascade outcomes. It introduces a Stratified Mean-Field Observer and distributional reinforcement learning with truncated quantile critics, trained on a GPU-accelerated simulator for non-Markovian renewal dynamics, to support risk-aware control and zero-shot transfer across real-world social networks.",
+    links: [{
+      text: "Read on OpenReview",
+      url: "https://openreview.net/forum?id=rwTtKedEAa&nesting=2&sort=date-desc"
+    }]
+  },
+  {
+    date: "April 13, 2026",
+    title: "Two Papers Accepted to the 23rd IFAC World Congress",
+    content: "Two Shakeri Lab papers have been accepted for presentation at the 23rd IFAC World Congress, to be held in Busan, Korea, August 23-28, 2026. 'Mitigating Exposure Bias in Risk-Aware Time Series Forecasting with Soft Tokens,' by Alireza Namazi, Amirreza Dolatpour Fathkouhi, and Heman Shakeri, was accepted as a regular paper. 'The Driver-Blindness Phenomenon: Why Deep Sequence Models Default to Autocorrelation in Blood Glucose Forecasting,' by Heman Shakeri, was accepted as an open invited track paper.",
+    links: [{
+      text: "Soft Tokens preprint",
+      url: "https://arxiv.org/abs/2512.10056"
+    }, {
+      text: "Driver-Blindness preprint",
+      url: "https://arxiv.org/abs/2511.20601"
+    }]
+  },
+  {
     date: "March 16, 2026",
     title: "Healio Features UVA Research on Expediting Insulin Titration with AID in Type 2 Diabetes",
     content: "Healio featured our recent pilot study presented at ATTD 2026 in Barcelona on using short-term automated insulin delivery to accelerate basal insulin titration in adults with type 2 diabetes. Led by colleagues at the UVA Center for Diabetes Technology, the randomized trial showed that 10 days of Control-IQ-guided titration improved time in range from 55% at baseline to 67.3%, with benefits comparable to daily physician-guided dose adjustments. The result suggests AID can identify effective basal doses in days rather than the 16 to 18 weeks often required in standard care.",

@@ -25,7 +25,7 @@ export function TeamCard() {
             <h3 className="text-sm font-semibold text-[var(--muted-strong)]">Current Members</h3>
             <ul className="space-y-2">
               {team.currentMembers.map((member, index) => (
-                <li key={index} className="text-sm text-[var(--muted)]">
+                <li key={index} className="break-words text-sm text-[var(--muted)]">
                   {member.link ? (
                     <Link
                       href={member.link}
@@ -46,7 +46,7 @@ export function TeamCard() {
             <h3 className="text-sm font-semibold text-[var(--muted-strong)]">Alumni</h3>
             <ul className="space-y-2">
               {team.alumni.map((member, index) => (
-                <li key={index} className="text-sm text-[var(--muted)]">
+                <li key={index} className="break-words text-sm text-[var(--muted)]">
                   {member.link ? (
                     <Link
                       href={member.link}

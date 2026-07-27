@@ -7,6 +7,7 @@ export default function Custom404() {
     <>
       <Head>
         <title>Page Not Found - Shakeri Lab</title>
+        <meta name="robots" content="noindex,follow" />
       </Head>
 
       <div className="min-h-screen bg-background text-foreground flex items-center justify-center px-4">
@@ -21,8 +22,8 @@ export default function Custom404() {
             />
           </div>
 
-          <h1 className="mb-4 text-6xl font-bold">404</h1>
-          <h2 className="mb-4 text-2xl font-semibold text-[var(--muted-strong)]">
+          <h1 className="mb-4 text-5xl font-bold sm:text-6xl">404</h1>
+          <h2 className="mb-4 text-xl font-semibold text-[var(--muted-strong)] sm:text-2xl">
             Page Not Found
           </h2>
           <p className="mx-auto mb-8 max-w-md text-[var(--muted)]">

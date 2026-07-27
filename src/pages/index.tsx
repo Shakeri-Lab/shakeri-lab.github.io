@@ -9,6 +9,49 @@ import {
   NewsCard,
 } from "@/components/sections";
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "ResearchOrganization",
+  name: "Shakeri Lab",
+  alternateName: "DYNAMO Lab",
+  url: "https://shakeri-lab.github.io/",
+  logo: "https://shakeri-lab.github.io/logo-square.jpeg",
+  email: "hs9hd@virginia.edu",
+  description:
+    "University of Virginia research lab studying machine learning, control systems, dynamical systems, and biomedical applications.",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "1919 Ivy Road",
+    addressLocality: "Charlottesville",
+    addressRegion: "VA",
+    postalCode: "22903",
+    addressCountry: "US",
+  },
+  parentOrganization: {
+    "@type": "CollegeOrUniversity",
+    name: "University of Virginia",
+    url: "https://www.virginia.edu/",
+  },
+  sameAs: [
+    "https://github.com/Shakeri-Lab",
+    "https://scholar.google.com/citations?user=zFIIhGMAAAAJ",
+    "https://shakeri-lab.github.io/dl-course-site/",
+  ],
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Shakeri Lab",
+  url: "https://shakeri-lab.github.io/",
+  description:
+    "Machine learning, control systems, dynamical systems, and biomedical research at the University of Virginia.",
+  publisher: {
+    "@type": "ResearchOrganization",
+    name: "Shakeri Lab",
+  },
+};
+
 export default function Home() {
   const [theme, setTheme] = useState("light");
 
@@ -35,6 +78,14 @@ export default function Home() {
     <>
       <Head>
         <title>Shakeri Lab - Machine Learning & Control Systems Research</title>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
       </Head>
 
       {/* Skip to main content link for accessibility */}
@@ -46,23 +97,23 @@ export default function Home() {
       </a>
 
       <div className="min-h-screen bg-background text-foreground">
-        <main id="main-content" className="container mx-auto py-8 px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <main id="main-content" className="container mx-auto px-3 py-6 sm:px-4 sm:py-8">
+          <div className="grid grid-cols-1 gap-6 lg:grid-cols-12 xl:gap-8">
             {/* Left Column */}
-            <div className="lg:col-span-3 space-y-6">
+            <div className="min-w-0 space-y-6 lg:col-span-3">
               <HeaderCard theme={theme} onToggleTheme={toggleTheme} />
               <TeamCard />
               <VideoCard />
             </div>
 
             {/* Middle Column */}
-            <div className="lg:col-span-6 space-y-6">
+            <div className="min-w-0 space-y-6 lg:col-span-6">
               <ResearchCard />
               <ProjectsCard />
             </div>
 
             {/* Right Column */}
-            <div className="lg:col-span-3">
+            <div className="min-w-0 lg:col-span-3">
               <NewsCard />
             </div>
           </div>

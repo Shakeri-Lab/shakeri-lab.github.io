@@ -42,6 +42,8 @@
 
 html {
   color-scheme: light;
+  overflow-x: clip;
+  scroll-behavior: smooth;
 }
 
 html.dark {
@@ -52,6 +54,8 @@ body {
   color: var(--foreground);
   background: var(--body-gradient, var(--background));
   background-color: var(--background);
+  min-width: 0;
+  overflow-wrap: break-word;
   font-family: var(
     --font-body,
     "Inter",
@@ -64,6 +68,13 @@ body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   transition: background-color 240ms ease, color 240ms ease;
+}
+
+img,
+svg,
+video,
+iframe {
+  max-width: 100%;
 }
 
 h1,
@@ -84,4 +95,15 @@ h6 {
 
 a {
   color: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
 }

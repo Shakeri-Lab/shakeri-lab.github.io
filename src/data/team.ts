@@ -41,6 +41,11 @@ export const team: Team = {
       name: "Aram Vajdi",
       title: "PostDoc Research Scientist",
       link: "https://www.linkedin.com/in/aram-vajdi-1116a8218/"
+    },
+    {
+      name: "Neeltje Kackar",
+      title: "PhD Student",
+      link: "https://neelt.je/home/homepage"
     }
   ],
   alumni: [

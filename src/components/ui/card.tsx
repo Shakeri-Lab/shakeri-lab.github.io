@@ -8,7 +8,7 @@ shadow-[var(--card-shadow)] backdrop-blur-[2px] transition-colors ${className ??
 
 export function CardHeader({ className, ...props }: 
 React.HTMLAttributes<HTMLDivElement>) {
-  return <div className={`flex flex-col space-y-1.5 p-6 ${className}`} 
+  return <div className={`flex flex-col space-y-1.5 p-5 sm:p-6 ${className ?? ""}`}
 {...props} />
 }
 
@@ -20,5 +20,5 @@ tracking-tight ${className}`} {...props} />
 
 export function CardContent({ className, ...props }: 
 React.HTMLAttributes<HTMLDivElement>) {
-  return <div className={`p-6 pt-0 ${className}`} {...props} />
+  return <div className={`p-5 pt-0 sm:p-6 sm:pt-0 ${className ?? ""}`} {...props} />
 }

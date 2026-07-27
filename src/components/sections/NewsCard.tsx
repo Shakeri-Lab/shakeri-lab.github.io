@@ -11,7 +11,7 @@ export function NewsCard() {
         <CardTitle className="text-base">News</CardTitle>
       </CardHeader>
       <CardContent className="relative">
-        <div className="h-[1350px] overflow-y-auto pr-2 space-y-4 scrollbar-thin">
+        <div className="space-y-4 lg:h-[1350px] lg:overflow-y-auto lg:pr-2 lg:scrollbar-thin">
           {news.map((item, index) => (
             <motion.div
               key={index}
@@ -35,7 +35,7 @@ export function NewsCard() {
                 </div>
               )}
               {item.links && item.links.length > 0 && (
-                <div className="mt-2 space-x-4">
+                <div className="mt-2 flex flex-wrap gap-x-4 gap-y-2">
                   {item.links.map((link, linkIndex) => (
                     <Link
                       key={linkIndex}
@@ -54,7 +54,7 @@ export function NewsCard() {
         </div>
 
         {/* Scroll indicator */}
-        <div className="pointer-events-none absolute bottom-0 left-0 right-0 flex h-16 items-end justify-center bg-gradient-to-t from-[var(--surface)] to-transparent pb-2">
+        <div className="pointer-events-none absolute bottom-0 left-0 right-0 hidden h-16 items-end justify-center bg-gradient-to-t from-[var(--surface)] to-transparent pb-2 lg:flex">
           <motion.div
             animate={{ y: [0, 5, 0] }}
             transition={{ duration: 2, repeat: Infinity }}

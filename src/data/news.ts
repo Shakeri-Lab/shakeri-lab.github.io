@@ -2,6 +2,37 @@ import { NewsItem } from '@/types';
 
 export const news: NewsItem[] = [
   {
+    date: "July 2026",
+    title: "Five Lab Abstracts Accepted to ATTD 2027 in Paris",
+    content: "Five abstracts from the lab were accepted to the 20th International Conference on Advanced Technologies & Treatments for Diabetes (ATTD 2027), to be held in Paris, France, March 3-6, 2027. Olivia Shen will give a Long Oral presentation on 'Exploring the Intrinsic Dimensionality of Artificial Pancreas States to Improve Safety and Robustness of Neural Network Insulin Dosing.' Meryem Altin Karagoz has two accepted abstracts: 'Safety and Feasibility of a Simplified Bolus Calculator Without Carbohydrate Counting for Type 1 Diabetes Patients on Multiple Daily Injections: Pilot Randomized Controlled Crossover Study' (e-Poster viewing) and 'Activity-Aware Reinforcement Learning for Automated Temporary Control Rate Modulation in a Fully Closed-Loop Automated Insulin Delivery System' (Short Oral). Aram Vajdi will present 'AI-Assisted Detection of CGM Glycemic Dysregulation for T1D Screening' (e-Poster viewing), and Ali Kashani will give a Short Oral on 'Risk-Based Adaptive Automated Insulin Delivery.'",
+    links: [{
+      text: "ATTD 2027",
+      url: "https://attd2027.kenes.com/"
+    }]
+  },
+  {
+    date: "July 2026",
+    title: "NIH R01 to Build a Foundation Model for Diabetes Funded",
+    content: "An NIH R01 to build a foundation model for diabetes has been funded. The project is led by Principal Investigator Boris Kovatchev at the UVA Center for Diabetes Technology, with Dr. Shakeri serving as co-Investigator. The award supports the development of foundation models of glucose-insulin-behavior dynamics and their use in automated insulin delivery."
+  },
+  {
+    date: "July 2026",
+    title: "Paper Accepted to the 65th IEEE Conference on Decision and Control",
+    content: "Our paper 'Data-Driven Personalization of Automated Insulin Delivery' has been accepted to the 65th IEEE Conference on Decision and Control (CDC 2026), to be held at the Hilton Hawaiian Village in Honolulu, Hawaii, December 15-18, 2026."
+  },
+  {
+    date: "July 2026",
+    title: "Paper at the ICML 2026 Workshop on Hypothesis Testing",
+    content: "Our paper, 'Cycle-Aware Spectral Testing for Community Structure via Renewal Non-Backtracking Random Walks,' was presented at the ICML 2026 Workshop on the Impact of Hypothesis Testing. The work develops a spectral test for community structure built on renewal non-backtracking random walks, using cycle-aware statistics to decide when apparent community structure in a network is statistically real.",
+    links: [{
+      text: "Read on OpenReview",
+      url: "https://openreview.net/forum?id=cyCzrYOOSi"
+    }, {
+      text: "Workshop site",
+      url: "https://www.testing.ml/"
+    }]
+  },
+  {
     date: "April 30, 2026",
     title: "ICML 2026 Spotlight Position Paper on Single-Cell Perturbation Analysis",
     content: "Our position paper, 'Position: Temporal Measurement Interval Determines Computational and Model Complexity in Single-Cell Perturbation Analysis,' has been accepted as a spotlight position track paper at ICML 2026. The paper argues that the measurement time gap is the key experimental knob governing both the computational tractability of coupling unpaired single-cell populations and the effective model complexity required for perturbation prediction. It identifies a critical regime change: short measurement intervals can make matching tractable and reduce the task to supervised learning, while longer intervals can make matching NP-hard in the worst case.",

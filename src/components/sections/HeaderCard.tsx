@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowUpRight, Book, Github, GraduationCap, Mail, MapPin, Moon, Sun } from "lucide-react";
+import { ArrowUpRight, Book, Building2, Github, GraduationCap, Mail, MapPin, Moon, Sun } from "lucide-react";
 
 interface HeaderCardProps {
   theme: string;
@@ -88,6 +88,16 @@ export function HeaderCard({ theme, onToggleTheme }: HeaderCardProps) {
             >
               <Github className="h-5 w-5" />
               <span className="sr-only">GitHub</span>
+            </Link>
+            <Link
+              href="https://med.virginia.edu/diabetes-technology/leadership/data-science-lab/"
+              className={iconClassName}
+              target="_blank"
+              rel="noopener noreferrer"
+              title="UVA Center for Diabetes Technology — Data Science Lab"
+            >
+              <Building2 className="h-5 w-5" />
+              <span className="sr-only">UVA Center for Diabetes Technology</span>
             </Link>
             <button
               onClick={onToggleTheme}

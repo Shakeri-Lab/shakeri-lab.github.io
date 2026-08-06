@@ -46,6 +46,16 @@ export const team: Team = {
       name: "Neeltje Kackar",
       title: "PhD Student",
       link: "https://neelt.je/home/homepage"
+    },
+    {
+      name: "Olivia Shen",
+      title: "PhD Student",
+      link: "https://med.virginia.edu/diabetes-technology/leadership/data-science-lab/"
+    },
+    {
+      name: "Meryem Altin Karagoz",
+      title: "PostDoc Research Scientist",
+      link: "https://med.virginia.edu/diabetes-technology/leadership/data-science-lab/"
     }
   ],
   alumni: [

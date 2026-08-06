@@ -23,11 +23,6 @@ export const team: Team = {
       link: "https://www.linkedin.com/in/amirreza-dolatpour-fathkouhi/"
     },
     {
-      name: "Tom Lever",
-      title: "Graduate Researcher",
-      link: "https://www.linkedin.com/in/tom-lever-12820541/"
-    },
-    {
       name: "Fokhrul Islam",
       title: "PhD Student",
       link: "https://www.linkedin.com/in/fokhrul-islam/"
@@ -59,6 +54,11 @@ export const team: Team = {
     }
   ],
   alumni: [
+    {
+      name: "Tom Lever",
+      title: "Graduate Researcher",
+      link: "https://www.linkedin.com/in/tom-lever-12820541/"
+    },
     {
       name: "Anne Talkington",
       title: "Tenure-track Assistant Professor (University at Buffalo)",

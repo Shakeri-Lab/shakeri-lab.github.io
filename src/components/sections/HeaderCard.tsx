@@ -60,11 +60,11 @@ export function HeaderCard({ theme, onToggleTheme }: HeaderCardProps) {
               <span className="sr-only">Email</span>
             </Link>
             <Link
-              href="https://www.google.com/maps/place/1919+Ivy+Rd,+Charlottesville,+VA+22903"
+              href="https://www.google.com/maps/place/560+Ray+C.+Hunt+Dr,+Charlottesville,+VA+22903"
               className={iconClassName}
               target="_blank"
               rel="noopener noreferrer"
-              title="1919 Ivy Rd, Charlottesville, VA 22903"
+              title="560 Ray C. Hunt Dr, Charlottesville, VA 22903"
             >
               <MapPin className="h-5 w-5" />
               <span className="sr-only">Location</span>

@@ -2,6 +2,15 @@ import { NewsItem } from '@/types';
 
 export const news: NewsItem[] = [
   {
+    date: "August 2026",
+    title: "Invited Lecture at ATTD 2027 in Paris",
+    content: "The Organizing Committee of the 20th International Conference on Advanced Technologies and Treatments for Diabetes (ATTD 2027) has invited Dr. Shakeri to deliver a lecture on 'Using CGM and AI for Early Detection of Diabetes.' The conference will be held in Paris, France, March 3-6, 2027. The talk will open a session on Advancing Diabetes Care Through Artificial Intelligence, a session proposed by Dr. Shakeri and adopted by the committee for the conference program.",
+    links: [{
+      text: "ATTD 2027",
+      url: "https://attd2027.kenes.com/"
+    }]
+  },
+  {
     date: "July 2026",
     title: "Five Lab Abstracts Accepted to the Breakthrough T1D Congress 2026",
     content: "Five abstracts from the lab were accepted to the inaugural Breakthrough T1D Clinical and Research Congress (CRC 2026), to be held in Philadelphia, Pennsylvania, October 9-11, 2026. Olivia Shen will give a Long Oral presentation on 'Exploring the Intrinsic Dimensionality of Artificial Pancreas States to Improve Safety and Robustness of Neural Network Insulin Dosing.' Meryem Altin Karagoz has two accepted abstracts: 'Safety and Feasibility of a Simplified Bolus Calculator Without Carbohydrate Counting for Type 1 Diabetes Patients on Multiple Daily Injections: Pilot Randomized Controlled Crossover Study' (e-Poster viewing) and 'Activity-Aware Reinforcement Learning for Automated Temporary Control Rate Modulation in a Fully Closed-Loop Automated Insulin Delivery System' (Short Oral). Aram Vajdi will present 'AI-Assisted Detection of CGM Glycemic Dysregulation for T1D Screening' (e-Poster viewing), and Ali Kashani will give a Short Oral on 'Risk-Based Adaptive Automated Insulin Delivery.'",

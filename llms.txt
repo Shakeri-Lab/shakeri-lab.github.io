@@ -1,0 +1,17 @@
+# Shakeri Lab
+
+> University of Virginia research lab working at the intersection of machine learning, control systems, dynamical systems, and biomedical applications.
+
+## Primary pages
+
+- Lab website: https://shakeri-lab.github.io/
+- Free deep learning course: https://shakeri-lab.github.io/dl-course-site/
+- GitHub organization: https://github.com/Shakeri-Lab
+- Google Scholar: https://scholar.google.com/citations?user=zFIIhGMAAAAJ
+
+## Research areas
+
+- Learning-based control and artificial pancreas systems
+- Deep learning and foundation models for physiological time series
+- Generative modeling of complex dynamical systems
+- Operator-theoretic machine learning

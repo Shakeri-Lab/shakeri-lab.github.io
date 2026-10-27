@@ -9,6 +9,20 @@
 - GitHub organization: https://github.com/Shakeri-Lab
 - Google Scholar: https://scholar.google.com/citations?user=zFIIhGMAAAAJ
 
+## Research software
+
+- Dengue Control Scheduler (Aedes Control): https://shakeri-lab.github.io/dengue-control-scheduler/
+  Browser interface for comparing mosquito-control schedules using temperature-driven relative dengue transmission risk.
+- Source code and desktop application: https://github.com/Shakeri-Lab/dengue-control-scheduler
+- Accompanying paper, Optimal scheduling of dengue vector control: https://doi.org/10.1016/j.jtbi.2026.112617
+
+## Recent accepted papers
+
+Both papers below were accepted to the ML4H 2026 Proceedings track for poster presentation; proceedings are forthcoming.
+
+- The Stationarity Bias in Continuous Glucose Monitoring Imputation: The Linear-Interpolation Consensus Holds Only in Stationary Regimes: https://openreview.net/forum?id=Bm0lVGTHz2
+- From Prediction to Practice: A Task-Aware Evaluation Framework for Blood Glucose Forecasting: https://openreview.net/forum?id=FTwYL20mPf
+
 ## Research areas
 
 - Learning-based control and artificial pancreas systems

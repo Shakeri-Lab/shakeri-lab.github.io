@@ -5,3 +5,4 @@ export { JoinCard } from "./JoinCard";
 export { ResearchCard } from "./ResearchCard";
 export { ProjectsCard } from "./ProjectsCard";
 export { NewsCard } from "./NewsCard";
+export { SoftwareCard } from "./SoftwareCard";

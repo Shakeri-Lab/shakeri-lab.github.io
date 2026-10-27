@@ -2,6 +2,33 @@ import { NewsItem } from '@/types';
 
 export const news: NewsItem[] = [
   {
+    date: "October 27, 2026",
+    title: "Two Papers Accepted to the ML4H 2026 Proceedings Track",
+    content: "Two Shakeri Lab papers have been accepted to the Proceedings track of the Machine Learning for Health Symposium (ML4H 2026), both for poster presentation. 'The Stationarity Bias in Continuous Glucose Monitoring Imputation: The Linear-Interpolation Consensus Holds Only in Stationary Regimes' is by Amirreza Dolatpour Fathkouhi, Alireza Namazi, and Heman Shakeri. 'From Prediction to Practice: A Task-Aware Evaluation Framework for Blood Glucose Forecasting' is by Alireza Namazi and Heman Shakeri. Both papers are forthcoming in the symposium proceedings.",
+    links: [{
+      text: "The Stationarity Bias",
+      url: "https://openreview.net/forum?id=Bm0lVGTHz2"
+    }, {
+      text: "From Prediction to Practice",
+      url: "https://openreview.net/forum?id=FTwYL20mPf"
+    }]
+  },
+  {
+    date: "October 2026",
+    title: "Dengue Vector Control Paper and Interactive Scheduler",
+    content: "'Optimal scheduling of dengue vector control,' by postdoctoral researcher Aram Vajdi, Lee W. Cohnstaedt, Caterina M. Scoglio, and Heman Shakeri, is published in the Journal of Theoretical Biology, volume 637, article 112617, with an issue date of January 21, 2027. The accompanying Dengue Control Scheduler (Aedes Control) offers a browser interface for comparing larvicide, adulticide, and breeding-site removal schedules using temperature-driven relative transmission risk, plus desktop tools for optimizing treatment dates.",
+    links: [{
+      text: "Read the paper",
+      url: "https://doi.org/10.1016/j.jtbi.2026.112617"
+    }, {
+      text: "Try the scheduler",
+      url: "https://shakeri-lab.github.io/dengue-control-scheduler/"
+    }, {
+      text: "Source code",
+      url: "https://github.com/Shakeri-Lab/dengue-control-scheduler"
+    }]
+  },
+  {
     date: "August 2026",
     title: "Invited Lecture at ATTD 2027 in Paris",
     content: "The Organizing Committee of the 20th International Conference on Advanced Technologies and Treatments for Diabetes (ATTD 2027) has invited Dr. Shakeri to deliver a lecture on 'Using CGM and AI for Early Detection of Diabetes.' The conference will be held in Paris, France, March 3-6, 2027. The talk will open a session on Advancing Diabetes Care Through Artificial Intelligence, a session proposed by Dr. Shakeri and adopted by the committee for the conference program.",

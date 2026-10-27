@@ -7,13 +7,13 @@ import {
   ResearchCard,
   ProjectsCard,
   NewsCard,
+  SoftwareCard,
 } from "@/components/sections";
 
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "ResearchOrganization",
   name: "Shakeri Lab",
-  alternateName: "DYNAMO Lab",
   url: "https://shakeri-lab.github.io/",
   logo: "https://shakeri-lab.github.io/logo-square.jpeg",
   email: "hs9hd@virginia.edu",
@@ -110,6 +110,7 @@ export default function Home() {
             <div className="min-w-0 space-y-6 lg:col-span-6">
               <ResearchCard />
               <ProjectsCard />
+              <SoftwareCard />
             </div>
 
             {/* Right Column */}

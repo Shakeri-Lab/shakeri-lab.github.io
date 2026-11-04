@@ -1,5 +1,19 @@
 import { NewsItem } from '@/types';
 
+const months = [
+  "January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December",
+];
+
+function newsDateKey(label: string): number {
+  // Date.parse("December 2025") is not portable to Safari. Use a numeric key
+  // so SSR and every browser sort year-only, month-only and full dates identically.
+  const match = /^(?:([A-Za-z]+) (?:(\d{1,2}), )?)?(\d{4})$/.exec(label);
+  const month = match?.[1] ? months.indexOf(match[1]) : 0;
+  if (!match || month < 0) throw new Error(`Unsupported news date: ${label}`);
+  return Number(match[3]) * 10000 + (month + 1) * 100 + Number(match[2] || 1);
+}
+
 export const news: NewsItem[] = [
   {
     date: "October 27, 2026",
@@ -466,8 +480,4 @@ export const news: NewsItem[] = [
     title: "Paper Published in Physical Review E",
     content: "Our paper 'Designing optimal multiplex networks for certain Laplacian spectral properties' has been published."
   }
-].sort((a, b) => {
-  const dateA = new Date(a.date).getTime();
-  const dateB = new Date(b.date).getTime();
-  return dateB - dateA;
-});
+].sort((a, b) => newsDateKey(b.date) - newsDateKey(a.date));

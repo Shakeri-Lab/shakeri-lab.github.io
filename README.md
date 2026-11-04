@@ -57,7 +57,7 @@ brew --version
 ```
 
 ### Prerequisites
-- Node.js (v18 or higher)
+- Node.js (v20 or higher)
   - Mac: `brew install node`
 - npm (comes with Node.js)
   - Mac: Automatically installed with node
@@ -87,6 +87,25 @@ npm run dev
 ```
 
 The site will be available at [http://localhost:3000](http://localhost:3000)
+
+### Responsive Layout Checks
+
+The homepage uses a fluid container: one column below 56rem, two columns up to
+80rem, and three columns above that. Research follows the introduction in the
+mobile reading order. News scrolls with the page except in the desktop sidebar.
+
+Run the browser regression suite before changing layout or breakpoints:
+
+```bash
+npm ci
+npx playwright install chromium webkit
+npm run test:responsive
+```
+
+The suite checks resizing in both directions, light/dark themes, overflow,
+course-link wrapping, news controls, keyboard scrolling, and touch layouts in
+Chromium and WebKit. Set `BASE_URL` to test an already-running or deployed site.
+Screenshots and failure traces are saved under `test-results/` (gitignored).
 
 ## Making Updates
 

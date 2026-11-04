@@ -16,7 +16,7 @@ export function HeaderCard({ theme, onToggleTheme }: HeaderCardProps) {
 
   return (
     <Card className="bg-[var(--surface-elevated)]">
-      <CardContent className="py-6">
+      <CardContent className="pt-5 sm:pt-6">
         <div className="flex flex-col items-center">
           <h1 className="mb-4 text-2xl font-bold tracking-tight">Shakeri Lab</h1>
 

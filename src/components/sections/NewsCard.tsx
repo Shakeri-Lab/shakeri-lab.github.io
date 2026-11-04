@@ -91,14 +91,19 @@ export function NewsCard() {
         <CardTitle className="text-base">News</CardTitle>
       </CardHeader>
       <CardContent className="relative">
-        <div className="space-y-4 lg:h-[1350px] lg:overflow-y-auto lg:pr-2 lg:scrollbar-thin">
+        <div
+          role="region"
+          aria-label="Lab news"
+          tabIndex={0}
+          className="space-y-4 rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)] xl:max-h-[1350px] xl:overflow-y-auto xl:pr-2 xl:pb-16 xl:scrollbar-thin"
+        >
           {news.map((item, index) => (
             <NewsEntry key={index} item={item} index={index} />
           ))}
         </div>
 
         {/* Scroll indicator */}
-        <div className="pointer-events-none absolute bottom-0 left-0 right-0 hidden h-16 items-end justify-center bg-gradient-to-t from-[var(--surface)] to-transparent pb-2 lg:flex">
+        <div aria-hidden="true" className="pointer-events-none absolute bottom-0 left-0 right-0 hidden h-16 items-end justify-center bg-gradient-to-t from-[var(--surface)] to-transparent pb-2 xl:flex">
           <motion.div
             animate={{ y: [0, 5, 0] }}
             transition={{ duration: 2, repeat: Infinity }}

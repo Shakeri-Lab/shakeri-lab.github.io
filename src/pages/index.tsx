@@ -97,24 +97,24 @@ export default function Home() {
       </a>
 
       <div className="min-h-screen bg-background text-foreground">
-        <main id="main-content" className="container mx-auto px-3 py-6 sm:px-4 sm:py-8">
-          <div className="grid grid-cols-1 gap-6 lg:grid-cols-12 xl:gap-8">
-            {/* Left Column */}
-            <div className="min-w-0 space-y-6 lg:col-span-3">
+        <main id="main-content" className="mx-auto w-full max-w-[90rem] px-3 py-6 sm:px-6 sm:py-8">
+          <div className="lab-layout">
+            <div className="lab-intro min-w-0">
               <HeaderCard theme={theme} onToggleTheme={toggleTheme} />
-              <TeamCard />
-              <VideoCard />
             </div>
 
-            {/* Middle Column */}
-            <div className="min-w-0 space-y-6 lg:col-span-6">
+            <div className="lab-research min-w-0 space-y-6">
               <ResearchCard />
               <ProjectsCard />
               <SoftwareCard />
             </div>
 
-            {/* Right Column */}
-            <div className="min-w-0 lg:col-span-3">
+            <div className="lab-team min-w-0 space-y-6">
+              <TeamCard />
+              <VideoCard />
+            </div>
+
+            <div className="lab-news min-w-0">
               <NewsCard />
             </div>
           </div>

@@ -97,6 +97,36 @@ a {
   color: inherit;
 }
 
+.lab-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas: "intro" "research" "team" "news";
+  align-items: start;
+  gap: 1.5rem;
+}
+
+.lab-intro { grid-area: intro; }
+.lab-research { grid-area: research; }
+.lab-team { grid-area: team; }
+.lab-news { grid-area: news; }
+
+/* Keep the research beside a readable sidebar before adding a third column. */
+@media (min-width: 56rem) {
+  .lab-layout {
+    grid-template-columns: 17rem minmax(0, 1fr);
+    grid-template-areas: "intro research" "team research" "news news";
+    grid-template-rows: auto 1fr auto;
+  }
+}
+
+@media (min-width: 80rem) {
+  .lab-layout {
+    grid-template-columns: minmax(17rem, 1fr) minmax(0, 2fr) minmax(17rem, 1fr);
+    grid-template-areas: "intro research news" "team research news";
+    grid-template-rows: auto 1fr;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

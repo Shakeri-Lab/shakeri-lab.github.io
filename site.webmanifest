@@ -1,0 +1,16 @@
+{
+  "name": "Shakeri Lab",
+  "short_name": "Shakeri Lab",
+  "description": "Machine learning, control systems, and biomedical research at the University of Virginia.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#edf4ff",
+  "theme_color": "#edf4ff",
+  "icons": [
+    {
+      "src": "/logo-square.jpeg",
+      "sizes": "1024x1024",
+      "type": "image/jpeg"
+    }
+  ]
+}

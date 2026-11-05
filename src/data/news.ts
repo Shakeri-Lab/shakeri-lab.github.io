@@ -17,6 +17,15 @@ function newsDateKey(label: string): number {
 export const news: NewsItem[] = [
   {
     date: "October 27, 2026",
+    title: "Close Concerns Highlights Dynamic CGM Analysis for Earlier Diabetes Detection",
+    content: "Close Concerns highlighted Dr. Heman Shakeri's presentation at the Diabetes Technology Meeting (DTM) 2026 on using time-resolved continuous glucose monitoring (CGM) data to investigate early changes in glucose regulation. The coverage discusses applications in gestational diabetes and presymptomatic type 1 diabetes, along with the importance of physiological context, insulin and meal data, and controlled model comparisons when evaluating AI-based CGM analysis.",
+    links: [{
+      text: "Read in Close Concerns",
+      url: "https://cckb.closeconcerns.com/r/dafe0418#new-dr-heman-shakeri-explores-dynamic-cgm-analysis-for-earlier-diabetes-detection"
+    }]
+  },
+  {
+    date: "October 27, 2026",
     title: "Two Papers Accepted to the ML4H 2026 Proceedings Track",
     content: "Two Shakeri Lab papers have been accepted to the Proceedings track of the Machine Learning for Health Symposium (ML4H 2026), both for poster presentation. 'The Stationarity Bias in Continuous Glucose Monitoring Imputation: The Linear-Interpolation Consensus Holds Only in Stationary Regimes' is by Amirreza Dolatpour Fathkouhi, Alireza Namazi, and Heman Shakeri. 'From Prediction to Practice: A Task-Aware Evaluation Framework for Blood Glucose Forecasting' is by Alireza Namazi and Heman Shakeri. Both papers are forthcoming in the symposium proceedings.",
     links: [{

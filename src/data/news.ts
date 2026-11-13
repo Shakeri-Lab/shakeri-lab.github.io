@@ -16,6 +16,11 @@ function newsDateKey(label: string): number {
 
 export const news: NewsItem[] = [
   {
+    date: "November 13, 2026",
+    title: "Home Feasibility Study of AI Insulin Delivery Accepted in npj Digital Medicine",
+    content: "The manuscript 'A Two-Week Home Feasibility Study of Fully Automated Artificial Intelligence Insulin Delivery in Type 1 Diabetes', co-authored by Dr. Heman Shakeri, has been accepted for publication in npj Digital Medicine."
+  },
+  {
     date: "October 27, 2026",
     title: "Close Concerns Highlights Dynamic CGM Analysis for Earlier Diabetes Detection",
     content: "Close Concerns highlighted Dr. Heman Shakeri's presentation at the Diabetes Technology Meeting (DTM) 2026 on using time-resolved continuous glucose monitoring (CGM) data to investigate early changes in glucose regulation. The coverage discusses applications in gestational diabetes and presymptomatic type 1 diabetes, along with the importance of physiological context, insulin and meal data, and controlled model comparisons when evaluating AI-based CGM analysis.",

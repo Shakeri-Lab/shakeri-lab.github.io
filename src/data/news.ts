@@ -17,8 +17,8 @@ function newsDateKey(label: string): number {
 export const news: NewsItem[] = [
   {
     date: "November 13, 2026",
-    title: "AI Insulin Delivery Study Accepted in npj Digital Medicine (Nature)",
-    content: "A paper co-authored by Dr. Heman Shakeri has been accepted for publication in npj Digital Medicine (Nature). The research examines the feasibility of fully automated AI insulin delivery for people with type 1 diabetes during a two-week study at home."
+    title: "Nature Journal Accepts AI Insulin Delivery Study",
+    content: "A paper co-authored by Dr. Heman Shakeri has been accepted for publication in npj Digital Medicine. The research examines the feasibility of fully automated AI insulin delivery for people with type 1 diabetes during a two-week study at home."
   },
   {
     date: "October 27, 2026",

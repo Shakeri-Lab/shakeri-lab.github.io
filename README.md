@@ -5,7 +5,7 @@ This is the official website for our lab, built with Next.js and deployed on Git
 ## Website Structure
 The website includes:
 - Research Overview
-- Current Projects
+- Research Areas
 - Team Members
 - News and Updates
 - Quick Links (Software & Publications)
@@ -26,6 +26,13 @@ News items are stored in `src/data/news.ts`. Add new items in this format:
   }]
 }
 ```
+
+### Updating Research Text
+The research text in the middle column is written to stay unchanged from month to month.
+The overview is in `src/components/sections/ResearchCard.tsx`; the research areas and the
+"Join Our Team" text are in `src/components/sections/ProjectsCard.tsx`. Keep papers, talks,
+and grants out of these files: announce them in `src/data/news.ts` instead, which is the only
+file routine updates need to touch.
 
 ### Updating Team Members
 Team information is stored in `src/data/team.ts`. Update members in this format:
@@ -92,7 +99,8 @@ The site will be available at [http://localhost:3000](http://localhost:3000)
 
 The homepage uses a fluid container: one column below 56rem, two columns up to
 80rem, and three columns above that. Research follows the introduction in the
-mobile reading order. News scrolls with the page except in the desktop sidebar.
+mobile reading order. News scrolls with the page except in the desktop sidebar,
+where the news list fills the height of the tallest column.
 
 Run the browser regression suite before changing layout or breakpoints:
 

@@ -29,7 +29,7 @@ function NewsEntry({ item, index }: { item: NewsItem; index: number }) {
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.3, delay: index * 0.1 }}
+      transition={{ duration: 0.3, delay: Math.min(index, 8) * 0.1 }}
       className="border-b border-[var(--border)] pb-4 last:border-0"
     >
       <p className="text-xs text-[var(--muted)] opacity-80">{item.date}</p>
@@ -86,16 +86,16 @@ function NewsEntry({ item, index }: { item: NewsItem; index: number }) {
 
 export function NewsCard() {
   return (
-    <Card>
+    <Card className="xl:absolute xl:inset-0 xl:flex xl:flex-col">
       <CardHeader>
         <CardTitle className="text-base">News</CardTitle>
       </CardHeader>
-      <CardContent className="relative">
+      <CardContent className="relative xl:flex xl:min-h-0 xl:flex-1 xl:flex-col">
         <div
           role="region"
           aria-label="Lab news"
           tabIndex={0}
-          className="space-y-4 rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)] xl:max-h-[1350px] xl:overflow-y-auto xl:pr-2 xl:pb-16 xl:scrollbar-thin"
+          className="space-y-4 rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)] xl:min-h-0 xl:flex-1 xl:overflow-y-auto xl:pr-2 xl:pb-16 xl:scrollbar-thin"
         >
           {news.map((item, index) => (
             <NewsEntry key={index} item={item} index={index} />

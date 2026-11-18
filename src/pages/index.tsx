@@ -18,10 +18,20 @@ const organizationSchema = {
   logo: "https://shakeri-lab.github.io/logo-square.jpeg",
   email: "hs9hd@virginia.edu",
   description:
-    "University of Virginia research lab studying machine learning, control systems, dynamical systems, and biomedical applications.",
+    "University of Virginia research lab working from deep learning theory and control theory to clinical research, all focused on treating and curing diabetes.",
+  knowsAbout: [
+    "Diabetes technology",
+    "Deep learning",
+    "Foundation models",
+    "Control theory",
+    "Artificial pancreas",
+    "Automated insulin delivery",
+    "Continuous glucose monitoring",
+    "Dynamical systems",
+  ],
   address: {
     "@type": "PostalAddress",
-    streetAddress: "1919 Ivy Road",
+    streetAddress: "560 Ray C. Hunt Dr",
     addressLocality: "Charlottesville",
     addressRegion: "VA",
     postalCode: "22903",
@@ -45,7 +55,7 @@ const websiteSchema = {
   name: "Shakeri Lab",
   url: "https://shakeri-lab.github.io/",
   description:
-    "Machine learning, control systems, dynamical systems, and biomedical research at the University of Virginia.",
+    "Deep learning theory, control theory, and clinical research focused on treating and curing diabetes, at the University of Virginia.",
   publisher: {
     "@type": "ResearchOrganization",
     name: "Shakeri Lab",
@@ -77,7 +87,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Shakeri Lab - Machine Learning & Control Systems Research</title>
+        <title>Shakeri Lab - Machine Learning & Control for Diabetes Technology</title>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}

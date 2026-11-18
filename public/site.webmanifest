@@ -1,7 +1,7 @@
 {
   "name": "Shakeri Lab",
   "short_name": "Shakeri Lab",
-  "description": "Machine learning, control systems, and biomedical research at the University of Virginia.",
+  "description": "Deep learning theory, control theory, and clinical research focused on treating and curing diabetes, at the University of Virginia.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#edf4ff",

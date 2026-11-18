@@ -5,12 +5,12 @@ export default function Document() {
     <Html lang="en">
       <Head>
         {/* Primary Meta Tags */}
-        <meta name="title" content="Shakeri Lab - Machine Learning & Control Systems Research" />
+        <meta name="title" content="Shakeri Lab - Machine Learning & Control for Diabetes Technology" />
         <meta
           name="description"
-          content="Shakeri Lab at University of Virginia specializes in machine learning, control systems, and dynamical systems for biomedical applications including smart artificial pancreas systems and single-cell signaling dynamics."
+          content="Shakeri Lab at the University of Virginia works from deep learning theory and control theory to clinical research, using foundation models, AI, and learning-based control, all focused on treating and curing diabetes."
         />
-        <meta name="keywords" content="machine learning, control systems, dynamical systems, biomedical, artificial pancreas, single-cell, UVA, research lab" />
+        <meta name="keywords" content="diabetes technology, deep learning, control theory, foundation models, artificial pancreas, automated insulin delivery, continuous glucose monitoring, machine learning, dynamical systems, PhD positions, UVA, research lab" />
         <meta name="author" content="Heman Shakeri" />
         <meta
           name="robots"
@@ -20,10 +20,10 @@ export default function Document() {
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://shakeri-lab.github.io/" />
-        <meta property="og:title" content="Shakeri Lab - Machine Learning & Control Systems Research" />
+        <meta property="og:title" content="Shakeri Lab - Machine Learning & Control for Diabetes Technology" />
         <meta
           property="og:description"
-          content="Shakeri Lab at University of Virginia specializes in machine learning, control systems, and dynamical systems for biomedical applications."
+          content="Shakeri Lab at the University of Virginia: deep learning theory, control theory, and clinical research, all focused on treating and curing diabetes."
         />
         <meta property="og:image" content="https://shakeri-lab.github.io/logo-square.jpeg" />
         <meta property="og:image:alt" content="Shakeri Lab logo" />
@@ -32,10 +32,10 @@ export default function Document() {
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://shakeri-lab.github.io/" />
-        <meta property="twitter:title" content="Shakeri Lab - Machine Learning & Control Systems Research" />
+        <meta property="twitter:title" content="Shakeri Lab - Machine Learning & Control for Diabetes Technology" />
         <meta
           property="twitter:description"
-          content="Shakeri Lab at University of Virginia specializes in machine learning, control systems, and dynamical systems for biomedical applications."
+          content="Shakeri Lab at the University of Virginia: deep learning theory, control theory, and clinical research, all focused on treating and curing diabetes."
         />
         <meta property="twitter:image" content="https://shakeri-lab.github.io/logo-square.jpeg" />
 

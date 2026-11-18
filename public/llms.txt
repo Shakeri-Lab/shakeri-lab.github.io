@@ -1,6 +1,6 @@
 # Shakeri Lab
 
-> University of Virginia research lab working at the intersection of machine learning, control systems, dynamical systems, and biomedical applications.
+> University of Virginia research lab whose work runs from deep learning theory and control theory to clinical research, all focused on treating and curing diabetes. The lab operates between the UVA School of Data Science and the UVA Center for Diabetes Technology, and recruits PhD students and postdocs with machine learning and control backgrounds.
 
 ## Primary pages
 
@@ -8,6 +8,7 @@
 - Free deep learning course: https://shakeri-lab.github.io/dl-course-site/
 - GitHub organization: https://github.com/Shakeri-Lab
 - Google Scholar: https://scholar.google.com/citations?user=zFIIhGMAAAAJ
+- UVA Center for Diabetes Technology, Data Science Lab: https://med.virginia.edu/diabetes-technology/leadership/data-science-lab/
 
 ## Research software
 
@@ -25,7 +26,8 @@ Both papers below were accepted to the ML4H 2026 Proceedings track for poster pr
 
 ## Research areas
 
-- Learning-based control and artificial pancreas systems
 - Deep learning and foundation models for physiological time series
-- Generative modeling of complex dynamical systems
+- Learning-based control and the artificial pancreas
 - Operator-theoretic machine learning
+- Generative modeling of complex dynamical systems
+- Clinical research and translation in diabetes technology

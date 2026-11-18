@@ -90,6 +90,18 @@ for (const theme of ["light", "dark"] as const) {
   });
 }
 
+test("research cards keep their order and news fills the desktop column", async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await page.goto("/");
+  expect(await page.locator(".lab-research h2").allTextContents()).toEqual([
+    "Research Overview", "Research Areas", "Research Software",
+  ]);
+  expect(await page.locator("h1").count()).toBe(1);
+  const research = (await page.locator(".lab-research").boundingBox())!;
+  const news = (await page.locator(".lab-news").boundingBox())!;
+  expect(Math.abs(research.y + research.height - (news.y + news.height))).toBeLessThan(1);
+});
+
 test("news expansion survives desktop-to-phone resizing", async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 900 });
   await page.goto("/");

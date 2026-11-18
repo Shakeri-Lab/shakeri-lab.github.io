@@ -1,6 +1,16 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
+// Evergreen descriptions of the lab's research, ordered from theory to clinic.
+// Papers, talks, and grants belong in src/data/news.ts, not here.
 const projects = [
+  {
+    title: "Deep Learning & Foundation Models for Time-Series",
+    description: (
+      <>
+        We study why deep sequence models succeed or fail on continuous physiological signals, and we use that theory to adapt Transformers, foundation models, and ideas from natural language processing to glucose and insulin data. We tackle challenges like Driver-Blindness in glucose forecasting and build architectures that robustly fuse multimodal inputs without sacrificing interpretability.
+      </>
+    ),
+  },
   {
     title: "Learning-Based Control & The Artificial Pancreas",
     description: (
@@ -10,10 +20,10 @@ const projects = [
     ),
   },
   {
-    title: "Deep Learning & Foundation Models for Time-Series",
+    title: "Operator-Theoretic Machine Learning",
     description: (
       <>
-        We adapt the successes of Transformers and foundation models to continuous physiological signals, tackling challenges like Driver-Blindness in glucose forecasting and building architectures that robustly fuse multimodal inputs without sacrificing interpretability.
+        Leveraging Koopman operator theory and spectral methods, we build globally linear representations of nonlinear dynamics to secure the guarantees and computational tractability needed for safety-critical medical devices and high-stakes decision systems.
       </>
     ),
   },
@@ -26,10 +36,10 @@ const projects = [
     ),
   },
   {
-    title: "Operator-Theoretic Machine Learning",
+    title: "Clinical Research & Translation",
     description: (
       <>
-        Leveraging Koopman operator theory and spectral methods, we build globally linear representations of nonlinear dynamics to secure the guarantees and computational tractability needed for safety-critical medical devices and high-stakes decision systems.
+        Our algorithms are built to leave the lab. Working with clinicians at the Center for Diabetes Technology, we take them into clinical studies of automated insulin delivery and develop tools for detecting diabetes earlier from continuous glucose monitoring (CGM). What we learn in the clinic comes back to the whiteboard.
       </>
     ),
   },
@@ -39,7 +49,7 @@ export function ProjectsCard() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Current Projects</CardTitle>
+        <CardTitle>Research Areas</CardTitle>
       </CardHeader>
       <CardContent className="space-y-8">
         <div className="space-y-8">
@@ -54,7 +64,7 @@ export function ProjectsCard() {
         <div className="space-y-4 border-t border-[var(--border)] pt-6">
           <h3 className="font-semibold text-[var(--muted-strong)]">Join Our Team</h3>
           <p className="text-sm text-[var(--muted)]">
-            We are recruiting PhD students and postdocs who are excited to bridge hard mathematics with applied clinical impact.
+            We are recruiting PhD students and postdocs with machine learning and control backgrounds who are excited to bridge hard mathematics with applied clinical impact.
           </p>
           <div className="space-y-2 text-sm text-[var(--muted)]">
             <p><strong>The Architect</strong>: adapts Transformers, Attention, and LLM ideas to time-series and understands why they work.</p>

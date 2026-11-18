@@ -125,6 +125,14 @@ a {
     grid-template-areas: "intro research news" "team research news";
     grid-template-rows: auto 1fr;
   }
+
+  /* The news card fills this cell (see NewsCard), so the list scrolls to the
+     height of the tallest column instead of adding height of its own. */
+  .lab-news {
+    position: relative;
+    align-self: stretch;
+    min-height: 40rem;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

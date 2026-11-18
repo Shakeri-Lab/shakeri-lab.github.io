@@ -16,6 +16,11 @@ function newsDateKey(label: string): number {
 
 export const news: NewsItem[] = [
   {
+    date: "November 18, 2026",
+    title: "Launchpad Foundation Awards $200,000 for Continuous Ketone Monitoring",
+    content: "The Launchpad Foundation awarded $200,000 for a project led by Dr. Heman Shakeri as principal investigator: \"Continuous ketone monitoring in children and young adults on insulin pumps: the evidence base for a Ketone-Aware Safety Supervisor (KASS).\""
+  },
+  {
     date: "November 13, 2026",
     title: "Nature Journal Accepts AI Insulin Delivery Study",
     content: "A paper co-authored by Dr. Heman Shakeri has been accepted for publication in npj Digital Medicine. The research examines the feasibility of fully automated AI insulin delivery for people with type 1 diabetes during a two-week study at home."
